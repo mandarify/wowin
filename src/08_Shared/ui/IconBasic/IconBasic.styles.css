@@ -1,0 +1,184 @@
+/* =================================
+   Icon Basic
+
+   Переменные:
+   --basic-icon-color-fill
+   --basic-icon-color-border
+   --basic-icon-color-shadow
+
+   Классы:
+   .basic-icon .basic-icon-[size]
+
+==================================== */
+
+.basic-icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* =================================
+   SVG Element
+==================================== */
+
+.basic-icon-element {
+   flex: 0 0 auto;
+   width: 100%;
+   height: 100%;
+
+   fill: var(--basic-icon-color-fill);
+   stroke-width: 1px;
+   stroke: var(--basic-icon-color-border);
+   filter: drop-shadow(0px 1.4px 0px var(--basic-icon-color-shadow));
+
+   /* Отключить контекстное меню на долгий тап. */
+   -webkit-touch-callout: none;
+
+   /* Отключить выделение текста. */
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+/* =================================
+   SIZE - Размеры контейнера.
+==================================== */
+
+.basic-icon-fill {
+   width: 100%;
+   height: 100%;
+}
+
+.basic-icon-10 {
+   width: 10px;
+   height: 10px;
+}
+
+.basic-icon-12 {
+   width: 12px;
+   height: 12px;
+}
+
+.basic-icon-14 {
+   width: 14px;
+   height: 14px;
+}
+
+.basic-icon-16 {
+   width: 16px;
+   height: 16px;
+}
+
+.basic-icon-18 {
+   width: 18px;
+   height: 18px;
+}
+
+.basic-icon-20 {
+   width: 20px;
+   height: 20px;
+}
+
+.basic-icon-22 {
+   width: 22px;
+   height: 22px;
+}
+
+.basic-icon-24 {
+   width: 24px;
+   height: 24px;
+}
+
+.basic-icon-26 {
+   width: 26px;
+   height: 26px;
+}
+
+.basic-icon-28 {
+   width: 28px;
+   height: 28px;
+}
+
+.basic-icon-30 {
+   width: 30px;
+   height: 30px;
+}
+
+.basic-icon-32 {
+   width: 32px;
+   height: 32px;
+}
+
+.basic-icon-34 {
+   width: 34px;
+   height: 34px;
+}
+
+.basic-icon-36 {
+   width: 36px;
+   height: 36px;
+}
+
+.basic-icon-38 {
+   width: 38px;
+   height: 38px;
+}
+
+.basic-icon-40 {
+   width: 40px;
+   height: 40px;
+}
+
+.basic-icon-42 {
+   width: 42px;
+   height: 42px;
+}
+
+.basic-icon-44 {
+   width: 44px;
+   height: 44px;
+}
+
+.basic-icon-46 {
+   width: 46px;
+   height: 46px;
+}
+
+.basic-icon-48 {
+   width: 48px;
+   height: 48px;
+}
+
+.basic-icon-50 {
+   width: 50px;
+   height: 50px;
+}
+
+.basic-icon-52 {
+   width: 52px;
+   height: 52px;
+}
+
+.basic-icon-54 {
+   width: 54px;
+   height: 54px;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

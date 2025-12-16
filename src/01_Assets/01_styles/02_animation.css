@@ -1,0 +1,82 @@
+/* =================================
+   ANIMATIONS
+==================================== */
+
+/* Шторм. */
+@keyframes storm {
+   0% {
+      transform: translateX(-2px);
+   }
+
+   25% {
+      transform: translateX(2px);
+   }
+
+   50% {
+      transform: translateX(-2px);
+   }
+
+   75% {
+      transform: translateX(2px);
+   }
+
+   100% {
+      transform: translateX(0px);
+   }
+}
+
+/* Block Placeholder Shimmer. */
+@keyframes block-shimmer {
+   0% {
+      transform: translateX(-100%);
+   }
+
+   100% {
+      transform: translateX(100%);
+   }
+}
+
+/* Парение в воздухе. */
+@keyframes float {
+   0% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(.4, 0, .6, 1);
+   }
+
+   40% {
+      transform: translateY(-4px);
+      animation-timing-function: cubic-bezier(.2, .8, .2, 1);
+   }
+
+   50% {
+      transform: translateY(-4px);
+   }
+
+   100% {
+      transform: translateY(0);
+   }
+}
+
+.ani_floating {
+   will-change: transform;
+   animation: float 3.2s infinite;
+   animation-delay: 200ms;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

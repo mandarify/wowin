@@ -1,0 +1,114 @@
+/* =================================
+   Text Game 
+
+   Переменные:
+   --game-color-text
+   --game-color-border
+   --game-color-shadow
+   --game-color-font-size
+   --game-color-font-weight
+   --game-color-font-lh
+
+==================================== */
+
+/* .game-text {
+   --game-color-text: #fff;
+   --game-color-border: #000;
+   --game-color-shadow: #000;
+   --game-color-font-size: 14px;
+   --game-color-font-weight: 500;
+} */
+
+/* =================================
+   Text Game Line (Topic)
+==================================== */
+
+.game-line {
+   overflow: visible;
+   position: relative;
+   width: 100%;
+}
+
+.game-line>span {
+   font-size: var(--game-color-font-size);
+   font-weight: var(--game-color-font-weight);
+}
+
+.game-line-main {
+   z-index: 2;
+   position: relative;
+
+   paint-order: stroke fill;
+   color: var(--game-color-text);
+   -webkit-text-stroke: 0.07em var(--game-color-border);
+}
+
+.game-line-shadow {
+   z-index: 1;
+   position: absolute;
+
+   top: 0.08em;
+   left: 0;
+
+   color: var(--app-color-shadow-2);
+   -webkit-text-stroke: 0.05em var(--app-color-shadow-2);
+}
+
+/* =================================
+   Text Game Block (Text)
+==================================== */
+
+.game-block {
+   overflow: visible;
+   position: relative;
+   width: 100%;
+   display: grid;
+}
+
+.game-block>span {
+
+   display: block;
+   grid-column: 1;
+   grid-row: 1;
+
+   font-size: var(--game-color-font-size);
+   font-weight: var(--game-color-font-weight);
+   line-height: var(--game-color-font-lh);
+   white-space: normal;
+}
+
+.game-block-main {
+   z-index: 2;
+   position: relative;
+
+   paint-order: stroke fill;
+   color: var(--game-color-text);
+   -webkit-text-stroke: 0.07em var(--game-color-border);
+}
+
+.game-block-shadow {
+   z-index: 1;
+   position: relative;
+
+   color: var(--app-color-shadow-2);
+   -webkit-text-stroke: 0.05em var(--app-color-shadow-2);
+   transform: translateY(0.08em);
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

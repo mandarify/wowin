@@ -1,0 +1,71 @@
+/* =================================
+   ImgProgress
+==================================== */
+
+.img-progress-box {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+
+/* =================================
+   Content
+==================================== */
+
+.img-progress {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+
+   display: block;
+   width: 100%;
+   height: 100%;
+
+   opacity: 1;
+}
+
+.img-progress_hidden {
+   opacity: 0;
+}
+
+/* =================================
+   Low
+==================================== */
+
+.img-low {
+   z-index: 1;
+}
+
+.img-progress-blur {
+   filter: blur(2px);
+}
+
+/* =================================
+   High
+==================================== */
+
+.img-high {
+   z-index: 2;
+   will-change: opacity;
+   transition: opacity 100ms ease-in-out;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

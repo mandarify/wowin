@@ -1,0 +1,45 @@
+/* =================================
+   BACKDROP
+==================================== */
+
+#backdrop {
+   z-index: -1;
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   pointer-events: none;
+
+   min-height: 100lvh;
+   width: 100lvw;
+
+   background:
+      radial-gradient(circle at center, rgba(0, 0, 0, 0) 0%, var(--app-bg-color-4) 100%),
+      url("../02_images/bg-pattern.svg"),
+      radial-gradient(circle at center, var(--app-bg-color-1) 0%, var(--app-bg-color-2) 100%);
+
+   background-repeat: no-repeat, repeat, no-repeat;
+   background-position: center, center, center;
+   background-size: cover, auto, cover;
+   background-blend-mode: normal, overlay, normal;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

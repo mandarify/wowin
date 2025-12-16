@@ -1,0 +1,155 @@
+/* =================================
+   Price
+==================================== */
+
+.price {
+   width: max-content;
+   height: max-content;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 4px;
+}
+
+.price-value {
+   --game-color-text: var(--app-color-gold-3);
+   --game-color-border: var(--app-color-burgundy-2);
+   --game-color-shadow: var(--app-color-shadow-2);
+   --game-color-font-weight: 700;
+
+   width: max-content;
+}
+
+.price-coin {
+
+   --price-coin-size: calc(var(--game-color-font-size) * 1.2);
+
+   flex: 0 0 var(--price-coin-size);
+   width: var(--price-coin-size);
+   height: var(--price-coin-size);
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: calc(var(--price-coin-size) / 2);
+   background-color: var(--app-color-shadow-2);
+}
+
+.price-coin-img {
+   width: var(--price-coin-size);
+   height: var(--price-coin-size);
+}
+
+/* =================================
+   Price Strike
+==================================== */
+
+.price-strike {
+   overflow: visible;
+   position: relative;
+}
+
+.price-strike::after {
+   content: "";
+
+   z-index: 2;
+   position: absolute;
+   top: 50%;
+   left: -5%;
+   transform: translateY(-50%) rotate(-4deg);
+
+   width: 110%;
+   height: 2px;
+
+   border-radius: 2px;
+   background-color: var(--app-color-red-6);
+   box-shadow: 0 1px 0 var(--app-color-shadow-2);
+}
+
+.price-strike .price-value {
+   --game-color-text: var(--app-color-gold-2) !important;
+}
+
+/* =================================
+   Justiry
+==================================== */
+
+.price-order-none {
+   display: none;
+}
+
+.price-order-start {
+   order: 0;
+}
+
+.price-order-end {
+   order: 1;
+}
+
+/* =================================
+   Size
+==================================== */
+
+.price-size-10 {
+   --game-color-font-size: 10px;
+}
+
+.price-size-12 {
+   --game-color-font-size: 12px;
+}
+
+.price-size-14 {
+   --game-color-font-size: 14px;
+}
+
+.price-size-16 {
+   --game-color-font-size: 16px;
+}
+
+.price-size-18 {
+   --game-color-font-size: 18px;
+}
+
+.price-size-20 {
+   --game-color-font-size: 20px;
+}
+
+.price-size-22 {
+   --game-color-font-size: 22px;
+}
+
+.price-size-24 {
+   --game-color-font-size: 24px;
+}
+
+.price-size-26 {
+   --game-color-font-size: 26px;
+}
+
+.price-size-28 {
+   --game-color-font-size: 28px;
+}
+
+.price-size-30 {
+   --game-color-font-size: 30px;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

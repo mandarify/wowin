@@ -1,0 +1,110 @@
+/* =================================
+   WheelFortuneMini
+==================================== */
+
+.wheel-fortune-mini {
+   width: 50px;
+   height: 68px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: start;
+   gap: 4px;
+}
+
+/* =================================
+   Top
+==================================== */
+
+.wheel-fortune-mini__top {
+   position: relative;
+   flex: 0 0 auto;
+   width: 50px;
+   height: 50px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   cursor: pointer;
+}
+
+.mini-wheel-circle {
+   width: 50px;
+   height: 50px;
+}
+
+@keyframes wheel-run {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(1080deg);
+   }
+}
+
+.mini-wheel-circle._run {
+   will-change: transform;
+   animation: wheel-run 5s cubic-bezier(0.15, 0.9, 0.2, 1);
+}
+
+.mini-wheel-top {
+   z-index: 2;
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+/* =================================
+   Bottom
+==================================== */
+
+.wheel-fortune-mini__bottom {
+
+   --svg-icon-color: var(--app-color-gold-3);
+
+   flex: 0 0 auto;
+   width: 50px;
+   height: 14px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2px;
+
+   border-radius: 2px;
+   background-color: var(--app-color-purple-9);
+
+   cursor: pointer;
+}
+
+.wheel-timer {
+   display: inline-block;
+   height: 10px;
+   font-family: var(--app-font-family-mono);
+   font-size: 11px;
+   font-weight: 600;
+   color: var(--app-color-gold-3);
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

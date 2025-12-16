@@ -1,0 +1,81 @@
+/* =================================
+   HELP
+==================================== */
+
+/* Включает взаимодействие с элементов и его масу. */
+._use {
+   -ms-user-select: auto;
+   -moz-user-select: auto;
+   -webkit-user-select: auto;
+
+   pointer-events: all;
+   user-select: auto;
+   cursor: auto;
+}
+
+/* Отключает полностью взаимодействие с элементов и его масу. */
+._unuse {
+   -ms-user-select: none;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+
+   pointer-events: none;
+   user-select: none;
+   cursor: none;
+}
+
+/* Запрещает выделять и тянуть элемент */
+._unselect {
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+
+   pointer-events: none;
+   user-select: none;
+}
+
+/* Placeholder Shimmer. */
+._empty-shimmer {
+   overflow: hidden;
+   position: relative;
+}
+
+._empty-shimmer::after {
+   content: "";
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+
+   width: 100%;
+   height: 100%;
+
+   transform: translateX(-100%);
+
+   background: var(--app-block-shimmer-bg);
+   animation: block-shimmer 2s infinite;
+
+   filter: blur(5px);
+
+   pointer-events: none;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

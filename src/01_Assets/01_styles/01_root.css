@@ -1,0 +1,185 @@
+/* =================================
+   ROOT
+==================================== */
+
+:root {
+
+   /* +++++ NORMALIZE +++++ */
+
+   /* Шрифты */
+   --app-font-family: "Rubik", sans-serif;
+   --app-font-family-mono: "Geist Mono", sans-serif;
+   --app-font-size: 12px;
+   --app-font-weight: 600;
+   --app-font-style: normal;
+
+   /* Убирает синий фон объектов которые выделяются */
+   --app-tap-bg: rgba(0, 0, 0, 0);
+
+   /* Цвет выделенного текста */
+   --app-text-bg-selection: rgba(0, 0, 0, 0.2);
+
+   /* ===== NORMALIZE ===== */
+
+   /* +++++ Z-INDEXES +++++ */
+
+   --app-z-1: 100;
+   --app-z-2: 200;
+   --app-z-3: 300;
+   --app-z-4: 400;
+   --app-z-5: 500;
+
+   /* ===== Z-INDEXES ===== */
+
+   /* +++++ MAIN COLORS +++++ */
+
+   /* SHIMMER */
+   --app-block-shimmer-bg: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
+
+   /* TEXT */
+   --app-text-color: rgba(208, 188, 255, 1);
+   --app-text-color-2: rgb(255, 239, 190, 1);
+
+   /* BG */
+   --app-bg-color-1: rgba(63, 46, 101, 1);
+   --app-bg-color-2: rgba(46, 32, 78, 1);
+   --app-bg-color-3: rgb(37, 25, 66);
+   --app-bg-color-4: rgb(22, 15, 40);
+
+   --app-block-bg-color: #6245A1;
+
+   /* COLORS */
+
+   --app-color-shadow-1: rgba(0, 0, 0, 0.8);
+   --app-color-shadow-2: #101010;
+
+   --app-color-purple-1: #B19FD7;
+   --app-color-purple-2: #8366C1;
+   --app-color-purple-3: #35255A;
+   --app-color-purple-4: #503986;
+   --app-color-purple-5: #23183C;
+   --app-color-purple-6: #422E71;
+   --app-color-purple-7: #37265E;
+   --app-color-purple-8: #9986C2;
+   --app-color-purple-9: #4A347C;
+   --app-color-purple-10: #7451BE;
+
+   --app-color-gold-1: #FFBA59;
+   --app-color-gold-2: #C77C31;
+   --app-color-gold-3: #FFAA05;
+
+   --app-color-red-0: rgb(218, 0, 0);
+   --app-color-red-1: #EB415D;
+   --app-color-red-2: #C20E2C;
+   --app-color-red-3: #7B0014;
+   --app-color-red-4: #5B0000;
+
+   --app-color-red-5: #FF8482;
+   --app-color-red-6: #E23733;
+   --app-color-red-7: #6B1818;
+   --app-color-red-8: #7B1715;
+   --app-color-red-9: #590200;
+   --app-color-red-10: #5E0000;
+
+   --app-color-green-1: #98ED71;
+   --app-color-green-2: #68CC3A;
+   --app-color-green-3: #315E1C;
+   --app-color-green-4: #2C4620;
+   --app-color-green-5: #0E2205;
+
+   --app-color-burgundy-1: #4B3544;
+   --app-color-burgundy-2: #2D2029;
+
+   /* ===== MAIN COLORS ===== */
+
+   /* +++++ STYLES COLORS DEFAULT +++++ */
+
+   --style-color-1: #370946;
+   --style-color-2: #691580;
+   --style-color-3: #9739B1;
+   --style-color-4: rgba(0, 0, 0, .15);
+   --style-color-5: #F5AF1B;
+   --style-color-6: #5C2600;
+   --style-color-7: #FF86E1;
+   --style-color-8: #23062D;
+
+   --game-color-text: var(--style-color-7);
+   --game-color-border: var(--app-color-shadow-2);
+   --game-color-shadow: var(--app-color-shadow-2);
+   --game-color-font-size: 12px;
+   --game-color-font-weight: 500;
+   --game-color-font-lh: 1;
+
+   --count-cards-color-bg: var(--style-color-8);
+   --count-cards-color-text: var(--style-color-7);
+   --count-cards-color-border: var(--style-color-3);
+
+   /* ===== STYLES COLORS DEFAULT ===== */
+
+}
+
+/* =================================
+   STYLES
+==================================== */
+
+[data-style="purgold"] {
+   --style-color-1: #370946;
+   --style-color-2: #691580;
+   --style-color-3: #9739B1;
+   --style-color-4: rgba(0, 0, 0, .15);
+   --style-color-5: #F5AF1B;
+   --style-color-6: #5C2600;
+   --style-color-7: #FF86E1;
+   --style-color-8: #23062D;
+}
+
+[data-style="ice"] {
+   --style-color-1: #00599B;
+   --style-color-2: #007CD7;
+   --style-color-3: #7DD1FF;
+   --style-color-4: rgba(0, 0, 0, .15);
+   --style-color-5: #71F6FF;
+   --style-color-6: #024678;
+   --style-color-7: #BEE8FF;
+   --style-color-8: #003963;
+}
+
+[data-style="tree"] {
+   --style-color-1: #B16715;
+   --style-color-2: #AE680D;
+   --style-color-3: #ECCE86;
+   --style-color-4: rgba(0, 0, 0, .15);
+   --style-color-5: #FFA448;
+   --style-color-6: #412000;
+   --style-color-7: #FFC86E;
+   --style-color-8: #472908;
+}
+
+[data-style="zoom"] {
+   --style-color-1: #5F3DBE;
+   --style-color-2: #C633DB;
+   --style-color-3: #F9D0FF;
+   --style-color-4: rgba(0, 0, 0, .15);
+   --style-color-5: #FFA4EB;
+   --style-color-6: #520028;
+   --style-color-7: #FFC0D9;
+   --style-color-8: #492572;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */
