@@ -55,7 +55,8 @@
                {
                   "id": 0,
                   "rarity": "legendary",
-                  "permille": 1,
+                  "permille": 10,
+                  "price": 47430,
                   "content": {
                      "id": "5933671725160989227",
                      "type": "gift",
@@ -66,7 +67,8 @@
                {
                   "id": 1,
                   "rarity": "epic",
-                  "permille": 10,
+                  "permille": 50,
+                  "price": 4650,
                   "content": {
                      "id": "6014675319464657779",
                      "type": "gift",
@@ -77,7 +79,8 @@
                {
                   "id": 2,
                   "rarity": "epic",
-                  "permille": 10,
+                  "permille": 50,
+                  "price": 4340,
                   "content": {
                      "id": "5933793770951673155",
                      "type": "gift",
@@ -88,7 +91,8 @@
                {
                   "id": 3,
                   "rarity": "rare",
-                  "permille": 200,
+                  "permille": 500,
+                  "price": 3875,
                   "content": {
                      "id": "5857140566201991735",
                      "type": "gift",
@@ -99,7 +103,8 @@
                {
                   "id": 4,
                   "rarity": "rare",
-                  "permille": 200,
+                  "permille": 1500,
+                  "price": 1240,
                   "content": {
                      "id": "6012435906336654262",
                      "type": "gift",
@@ -110,7 +115,8 @@
                {
                   "id": 5,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 310,
                   "content": {
                      "id": "5933543975653737112",
                      "type": "gift",
@@ -121,7 +127,8 @@
                {
                   "id": 6,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 310,
                   "content": {
                      "id": "5170594532177215681",
                      "type": "gift",
@@ -132,7 +139,8 @@
                {
                   "id": 7,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 310,
                   "content": {
                      "id": "5782988952268964995",
                      "type": "gift",
@@ -143,7 +151,8 @@
                {
                   "id": 8,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 310,
                   "content": {
                      "id": "6005564615793050414",
                      "type": "gift",
@@ -154,7 +163,8 @@
                {
                   "id": 9,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 310,
                   "content": {
                      "id": "5895603153683874485",
                      "type": "gift",
@@ -165,7 +175,8 @@
                {
                   "id": 10,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 8000,
+                  "price": 130,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -176,7 +187,8 @@
                {
                   "id": 11,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 8000,
+                  "price": 100,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -187,7 +199,8 @@
                {
                   "id": 12,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 10000,
+                  "price": 80,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -198,7 +211,8 @@
                {
                   "id": 13,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 12000,
+                  "price": 50,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -209,7 +223,8 @@
                {
                   "id": 14,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 12000,
+                  "price": 30,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -220,7 +235,8 @@
                {
                   "id": 15,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 27890,
+                  "price": 10,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -264,7 +280,8 @@
                {
                   "id": 0,
                   "rarity": "legendary",
-                  "permille": 1,
+                  "permille": 2,
+                  "price": 23870,
                   "content": {
                      "id": "5895518353849582541",
                      "type": "gift",
@@ -276,6 +293,7 @@
                   "id": 1,
                   "rarity": "legendary",
                   "permille": 1,
+                  "price": 47430,
                   "content": {
                      "id": "5933671725160989227",
                      "type": "gift",
@@ -286,7 +304,8 @@
                {
                   "id": 2,
                   "rarity": "legendary",
-                  "permille": 1,
+                  "permille": 7,
+                  "price": 8680,
                   "content": {
                      "id": "6005797617768858105",
                      "type": "gift",
@@ -297,7 +316,8 @@
                {
                   "id": 3,
                   "rarity": "epic",
-                  "permille": 10,
+                  "permille": 40,
+                  "price": 3565,
                   "content": {
                      "id": "5902339509239940491",
                      "type": "gift",
@@ -308,7 +328,8 @@
                {
                   "id": 4,
                   "rarity": "epic",
-                  "permille": 10,
+                  "permille": 30,
+                  "price": 4340,
                   "content": {
                      "id": "5933793770951673155",
                      "name": "Neko Helmet",
@@ -318,7 +339,8 @@
                {
                   "id": 5,
                   "rarity": "epic",
-                  "permille": 10,
+                  "permille": 30,
+                  "price": 4650,
                   "content": {
                      "id": "6014675319464657779",
                      "type": "gift",
@@ -329,7 +351,8 @@
                {
                   "id": 6,
                   "rarity": "rare",
-                  "permille": 200,
+                  "permille": 300,
+                  "price": 3875,
                   "content": {
                      "id": "5857140566201991735",
                      "type": "gift",
@@ -340,7 +363,8 @@
                {
                   "id": 7,
                   "rarity": "rare",
-                  "permille": 200,
+                  "permille": 400,
+                  "price": 3565,
                   "content": {
                      "id": "5836780359634649414",
                      "type": "gift",
@@ -351,7 +375,8 @@
                {
                   "id": 8,
                   "rarity": "rare",
-                  "permille": 200,
+                  "permille": 600,
+                  "price": 1860,
                   "content": {
                      "id": "5841632504448025405",
                      "type": "gift",
@@ -362,7 +387,8 @@
                {
                   "id": 9,
                   "rarity": "rare",
-                  "permille": 200,
+                  "permille": 700,
+                  "price": 1395,
                   "content": {
                      "id": "5837063436634161765",
                      "type": "gift",
@@ -373,7 +399,8 @@
                {
                   "id": 10,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 465,
                   "content": {
                      "id": "6005659564635063386",
                      "type": "gift",
@@ -385,6 +412,7 @@
                   "id": 11,
                   "rarity": "unique",
                   "permille": 2000,
+                  "price": 775,
                   "content": {
                      "id": "5882252952218894938",
                      "type": "gift",
@@ -395,7 +423,8 @@
                {
                   "id": 12,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 419,
                   "content": {
                      "id": "5895603153683874485",
                      "type": "gift",
@@ -407,6 +436,7 @@
                   "id": 13,
                   "rarity": "unique",
                   "permille": 2000,
+                  "price": 667,
                   "content": {
                      "id": "5980789805615678057",
                      "type": "gift",
@@ -417,7 +447,8 @@
                {
                   "id": 14,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 310,
                   "content": {
                      "id": "6005564615793050414",
                      "type": "gift",
@@ -428,7 +459,8 @@
                {
                   "id": 15,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 310,
                   "content": {
                      "id": "5170594532177215681",
                      "type": "gift",
@@ -439,7 +471,8 @@
                {
                   "id": 16,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 6000,
+                  "price": 150,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -450,7 +483,8 @@
                {
                   "id": 17,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 10000,
+                  "price": 80,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -461,7 +495,8 @@
                {
                   "id": 18,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 14000,
+                  "price": 40,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -472,7 +507,8 @@
                {
                   "id": 19,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 20000,
+                  "price": 20,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -483,7 +519,8 @@
                {
                   "id": 20,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 27890,
+                  "price": 10,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -524,7 +561,8 @@
                {
                   "id": 0,
                   "rarity": "legendary",
-                  "permille": 1,
+                  "permille": 10,
+                  "price": 4340,
                   "content": {
                      "id": "5933793770951673155",
                      "type": "gift",
@@ -535,7 +573,8 @@
                {
                   "id": 1,
                   "rarity": "epic",
-                  "permille": 10,
+                  "permille": 100,
+                  "price": 1240,
                   "content": {
                      "id": "6012435906336654262",
                      "type": "gift",
@@ -546,7 +585,8 @@
                {
                   "id": 2,
                   "rarity": "rare",
-                  "permille": 200,
+                  "permille": 1000,
+                  "price": 775,
                   "content": {
                      "id": "5825480571261813595",
                      "type": "gift",
@@ -557,7 +597,8 @@
                {
                   "id": 3,
                   "rarity": "rare",
-                  "permille": 200,
+                  "permille": 1000,
+                  "price": 775,
                   "content": {
                      "id": "5882252952218894938",
                      "type": "gift",
@@ -568,7 +609,8 @@
                {
                   "id": 4,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 310,
                   "content": {
                      "id": "5170594532177215681",
                      "type": "gift",
@@ -579,7 +621,8 @@
                {
                   "id": 5,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 310,
                   "content": {
                      "id": "5782988952268964995",
                      "type": "gift",
@@ -590,7 +633,8 @@
                {
                   "id": 6,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 310,
                   "content": {
                      "id": "6005564615793050414",
                      "type": "gift",
@@ -601,7 +645,8 @@
                {
                   "id": 7,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 310,
                   "content": {
                      "id": "6006064678835323371",
                      "type": "gift",
@@ -612,7 +657,8 @@
                {
                   "id": 8,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 310,
                   "content": {
                      "id": "6023679164349940429",
                      "type": "gift",
@@ -623,7 +669,8 @@
                {
                   "id": 9,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 5000,
+                  "price": 100,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -634,7 +681,8 @@
                {
                   "id": 10,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 8000,
+                  "price": 50,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -645,7 +693,8 @@
                {
                   "id": 11,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 10000,
+                  "price": 25,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -656,7 +705,8 @@
                {
                   "id": 12,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 12000,
+                  "price": 10,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -667,7 +717,8 @@
                {
                   "id": 13,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 16000,
+                  "price": 5,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -678,7 +729,8 @@
                {
                   "id": 14,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 27890,
+                  "price": 3,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -719,7 +771,8 @@
                {
                   "id": 0,
                   "rarity": "legendary",
-                  "permille": 1,
+                  "permille": 10,
+                  "price": 8680,
                   "content": {
                      "id": "6005797617768858105",
                      "type": "gift",
@@ -730,7 +783,8 @@
                {
                   "id": 1,
                   "rarity": "epic",
-                  "permille": 10,
+                  "permille": 40,
+                  "price": 3875,
                   "content": {
                      "id": "5868220813026526561",
                      "type": "gift",
@@ -741,7 +795,8 @@
                {
                   "id": 2,
                   "rarity": "epic",
-                  "permille": 10,
+                  "permille": 40,
+                  "price": 4340,
                   "content": {
                      "id": "5933793770951673155",
                      "type": "gift",
@@ -752,7 +807,8 @@
                {
                   "id": 3,
                   "rarity": "epic",
-                  "permille": 10,
+                  "permille": 20,
+                  "price": 5425,
                   "content": {
                      "id": "5841689550203650524",
                      "type": "gift",
@@ -763,7 +819,8 @@
                {
                   "id": 4,
                   "rarity": "rare",
-                  "permille": 200,
+                  "permille": 500,
+                  "price": 1240,
                   "content": {
                      "id": "5837063436634161765",
                      "type": "gift",
@@ -774,7 +831,8 @@
                {
                   "id": 5,
                   "rarity": "rare",
-                  "permille": 200,
+                  "permille": 1500,
+                  "price": 620,
                   "content": {
                      "id": "5895544372761461960",
                      "type": "gift",
@@ -785,7 +843,8 @@
                {
                   "id": 6,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 3000,
+                  "price": 310,
                   "content": {
                      "id": "6005659564635063386",
                      "type": "gift",
@@ -796,7 +855,8 @@
                {
                   "id": 7,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 3000,
+                  "price": 310,
                   "content": {
                      "id": "5900177027566142759",
                      "name": "Ice Cream",
@@ -806,7 +866,8 @@
                {
                   "id": 8,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 3000,
+                  "price": 310,
                   "content": {
                      "id": "6005564615793050414",
                      "type": "gift",
@@ -817,7 +878,8 @@
                {
                   "id": 9,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 3000,
+                  "price": 310,
                   "content": {
                      "id": "5170594532177215681",
                      "type": "gift",
@@ -828,7 +890,8 @@
                {
                   "id": 10,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 290,
                   "content": {
                      "id": "6006064678835323371",
                      "type": "gift",
@@ -839,7 +902,8 @@
                {
                   "id": 11,
                   "rarity": "unique",
-                  "permille": 2000,
+                  "permille": 4000,
+                  "price": 290,
                   "content": {
                      "id": "6023752243218481939",
                      "type": "gift",
@@ -850,7 +914,8 @@
                {
                   "id": 12,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 6000,
+                  "price": 130,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -861,7 +926,8 @@
                {
                   "id": 13,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 10000,
+                  "price": 80,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -872,7 +938,8 @@
                {
                   "id": 14,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 14000,
+                  "price": 50,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -883,7 +950,8 @@
                {
                   "id": 15,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 20000,
+                  "price": 20,
                   "content": {
                      "id": null,
                      "type": "coin",
@@ -894,7 +962,8 @@
                {
                   "id": 16,
                   "rarity": "common",
-                  "permille": 7789,
+                  "permille": 27890,
+                  "price": 10,
                   "content": {
                      "id": null,
                      "type": "coin",
