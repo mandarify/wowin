@@ -262,8 +262,8 @@
             },
             "limit": null,
             "timer": {
-               "dtStart": 1765901244,
-               "duration": 172800
+               "dtStart": 1766003410,
+               "duration": 100000
             },
             "stats": {
                "legendary": 3,
