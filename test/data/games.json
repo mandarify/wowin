@@ -27,7 +27,7 @@
             "position": 1,
             "title": "Сияние",
             "desc": "Звезды светят ярко и точно знают как согреть твой баланс.",
-            "link": "/game/case-fortune",
+            "link": "/game/case/glow",
             "dtCreate": 1765886400,
             "style": "purgold",
             "price": 799,
@@ -252,7 +252,7 @@
             "position": 2,
             "title": "Льдина",
             "desc": "Хрусть! Либо красиво, либо подозрительно красиво.",
-            "link": "/game/case-iceblock",
+            "link": "/game/case/iceblock",
             "dtCreate": 1765800000,
             "style": "ice",
             "price": 329,
@@ -263,7 +263,7 @@
             "limit": null,
             "timer": {
                "dtStart": 1766003410,
-               "duration": 100000
+               "duration": 500000
             },
             "stats": {
                "legendary": 3,
@@ -536,7 +536,7 @@
             "position": 4,
             "title": "Фортуна",
             "desc": "Фортуна мало обещает, но может очень дорого удивить.",
-            "link": "/game/case-fortune",
+            "link": "/game/case/fortune",
             "dtCreate": 1765368000,
             "style": "tree",
             "price": 169,
@@ -746,7 +746,7 @@
             "position": 3,
             "title": "Стиль",
             "desc": "Кейс держит эмоции дольше, чем твой аккумулятор.",
-            "link": "/game/case-swag",
+            "link": "/game/case/swag",
             "dtCreate": 1765713600,
             "style": "zoom",
             "price": 249,
