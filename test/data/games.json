@@ -23,7 +23,7 @@
       "games": [
          {
             "id": 0,
-            "isTop": 2,
+            "isTop": 3,
             "position": 1,
             "title": "Сияние",
             "desc": "Звезды светят ярко и точно знают как согреть твой баланс.",
@@ -180,7 +180,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "130 WINS",
+                     "name": "130 WOW",
                      "src": "test/coins/coin-medium.svg"
                   }
                },
@@ -192,7 +192,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "100 WINS",
+                     "name": "100 WOW",
                      "src": "test/coins/coin-medium.svg"
                   }
                },
@@ -204,7 +204,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "80 WINS",
+                     "name": "80 WOW",
                      "src": "test/coins/coin-medium.svg"
                   }
                },
@@ -216,7 +216,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "50 WINS",
+                     "name": "50 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                },
@@ -228,7 +228,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "30 WINS",
+                     "name": "30 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                },
@@ -240,7 +240,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "10 WINS",
+                     "name": "10 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                }
@@ -248,7 +248,7 @@
          },
          {
             "id": 1,
-            "isTop": 1,
+            "isTop": 2,
             "position": 2,
             "title": "Льдина",
             "desc": "Хрусть! Либо красиво, либо подозрительно красиво.",
@@ -476,7 +476,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "150 WINS",
+                     "name": "150 WOW",
                      "src": "test/coins/coin-medium.svg"
                   }
                },
@@ -488,7 +488,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "80 WINS",
+                     "name": "80 WOW",
                      "src": "test/coins/coin-medium.svg"
                   }
                },
@@ -500,7 +500,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "40 WINS",
+                     "name": "40 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                },
@@ -512,7 +512,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "20 WINS",
+                     "name": "20 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                },
@@ -524,7 +524,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "10 WINS",
+                     "name": "10 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                }
@@ -674,7 +674,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "100 WINS",
+                     "name": "100 WOW",
                      "src": "test/coins/coin-medium.svg"
                   }
                },
@@ -686,7 +686,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "50 WINS",
+                     "name": "50 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                },
@@ -698,7 +698,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "25 WINS",
+                     "name": "25 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                },
@@ -710,7 +710,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "10 WINS",
+                     "name": "10 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                },
@@ -722,7 +722,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "5 WINS",
+                     "name": "5 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                },
@@ -734,7 +734,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "3 WINS",
+                     "name": "3 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                }
@@ -742,7 +742,7 @@
          },
          {
             "id": 3,
-            "isTop": 3,
+            "isTop": 4,
             "position": 3,
             "title": "Стиль",
             "desc": "Кейс держит эмоции дольше, чем твой аккумулятор.",
@@ -919,7 +919,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "130 WINS",
+                     "name": "130 WOW",
                      "src": "test/coins/coin-medium.svg"
                   }
                },
@@ -931,7 +931,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "80 WINS",
+                     "name": "80 WOW",
                      "src": "test/coins/coin-medium.svg"
                   }
                },
@@ -943,7 +943,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "50 WINS",
+                     "name": "50 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                },
@@ -955,7 +955,7 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "20 WINS",
+                     "name": "20 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                },
@@ -967,7 +967,145 @@
                   "content": {
                      "id": null,
                      "type": "coin",
-                     "name": "10 WINS",
+                     "name": "10 WOW",
+                     "src": "test/coins/coin-low.svg"
+                  }
+               }
+            ]
+         },
+         {
+            "id": 4,
+            "isTop": 1,
+            "position": 5,
+            "title": "Посылка",
+            "desc": "Тебе пришла крупная посылка! Забирай и открывай!",
+            "link": "/game/case/package",
+            "dtCreate": 1766429532,
+            "style": "tree",
+            "price": 9,
+            "sale": {
+               "percent": -75,
+               "oldPrice": 40
+            },
+            "limit": null,
+            "timer": null,
+            "stats": {
+               "legendary": 1,
+               "epic": 1,
+               "rare": 2,
+               "unique": 2,
+               "common": 3
+            },
+            "srcs": {
+               "low": "test/cases/case-preview-2.png",
+               "high": "test/cases/case-package.png"
+            },
+            "items": [
+               {
+                  "id": 0,
+                  "rarity": "legendary",
+                  "permille": 10,
+                  "price": 300,
+                  "content": {
+                     "id": null,
+                     "type": "coin",
+                     "name": "300 WOW",
+                     "src": "test/coins/coin-medium.svg"
+                  }
+               },
+               {
+                  "id": 1,
+                  "rarity": "epic",
+                  "permille": 100,
+                  "price": 100,
+                  "content": {
+                     "id": null,
+                     "type": "coin",
+                     "name": "100 WOW",
+                     "src": "test/coins/coin-medium.svg"
+                  }
+               },
+               {
+                  "id": 2,
+                  "rarity": "rare",
+                  "permille": 500,
+                  "price": 50,
+                  "content": {
+                     "id": null,
+                     "type": "coin",
+                     "name": "50 WOW",
+                     "src": "test/coins/coin-low.svg"
+                  }
+               },
+               {
+                  "id": 3,
+                  "rarity": "rare",
+                  "permille": 1500,
+                  "price": 20,
+                  "content": {
+                     "id": null,
+                     "type": "coin",
+                     "name": "20 WOW",
+                     "src": "test/coins/coin-low.svg"
+                  }
+               },
+               {
+                  "id": 4,
+                  "rarity": "unique",
+                  "permille": 5000,
+                  "price": 10,
+                  "content": {
+                     "id": null,
+                     "type": "coin",
+                     "name": "10 WOW",
+                     "src": "test/coins/coin-low.svg"
+                  }
+               },
+               {
+                  "id": 5,
+                  "rarity": "unique",
+                  "permille": 15000,
+                  "price": 5,
+                  "content": {
+                     "id": null,
+                     "type": "coin",
+                     "name": "5 WOW",
+                     "src": "test/coins/coin-low.svg"
+                  }
+               },
+               {
+                  "id": 6,
+                  "rarity": "common",
+                  "permille": 20000,
+                  "price": 3,
+                  "content": {
+                     "id": null,
+                     "type": "coin",
+                     "name": "3 WOW",
+                     "src": "test/coins/coin-low.svg"
+                  }
+               },
+               {
+                  "id": 7,
+                  "rarity": "common",
+                  "permille": 20000,
+                  "price": 2,
+                  "content": {
+                     "id": null,
+                     "type": "coin",
+                     "name": "2 WOW",
+                     "src": "test/coins/coin-low.svg"
+                  }
+               },
+               {
+                  "id": 8,
+                  "rarity": "common",
+                  "permille": 37890,
+                  "price": 1,
+                  "content": {
+                     "id": null,
+                     "type": "coin",
+                     "name": "1 WOW",
                      "src": "test/coins/coin-low.svg"
                   }
                }
