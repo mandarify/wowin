@@ -1,0 +1,138 @@
+{
+   "id": 4,
+   "isTop": 1,
+   "position": 5,
+   "title": "Посылка",
+   "desc": "Тебе пришла крупная посылка! Забирай и открывай!",
+   "link": "/game/case/package",
+   "dtCreate": 1766429532,
+   "style": "tree",
+   "price": 9,
+   "sale": {
+      "percent": -75,
+      "oldPrice": 40
+   },
+   "limit": null,
+   "timer": null,
+   "stats": {
+      "legendary": 1,
+      "epic": 1,
+      "rare": 2,
+      "unique": 2,
+      "common": 3
+   },
+   "srcs": {
+      "low": "/wowin/test/cases/case-preview-2.png",
+      "high": "/wowin/test/cases/case-package.png"
+   },
+   "items": [
+      {
+         "id": 0,
+         "rarity": "legendary",
+         "permille": 10,
+         "price": 300,
+         "content": {
+            "id": null,
+            "type": "coin",
+            "name": "300 WOW",
+            "src": "/wowin/test/coins/coin-medium.svg"
+         }
+      },
+      {
+         "id": 1,
+         "rarity": "epic",
+         "permille": 100,
+         "price": 100,
+         "content": {
+            "id": null,
+            "type": "coin",
+            "name": "100 WOW",
+            "src": "/wowin/test/coins/coin-medium.svg"
+         }
+      },
+      {
+         "id": 2,
+         "rarity": "rare",
+         "permille": 500,
+         "price": 50,
+         "content": {
+            "id": null,
+            "type": "coin",
+            "name": "50 WOW",
+            "src": "/wowin/test/coins/coin-low.svg"
+         }
+      },
+      {
+         "id": 3,
+         "rarity": "rare",
+         "permille": 1500,
+         "price": 20,
+         "content": {
+            "id": null,
+            "type": "coin",
+            "name": "20 WOW",
+            "src": "/wowin/test/coins/coin-low.svg"
+         }
+      },
+      {
+         "id": 4,
+         "rarity": "unique",
+         "permille": 5000,
+         "price": 10,
+         "content": {
+            "id": null,
+            "type": "coin",
+            "name": "10 WOW",
+            "src": "/wowin/test/coins/coin-low.svg"
+         }
+      },
+      {
+         "id": 5,
+         "rarity": "unique",
+         "permille": 15000,
+         "price": 5,
+         "content": {
+            "id": null,
+            "type": "coin",
+            "name": "5 WOW",
+            "src": "/wowin/test/coins/coin-low.svg"
+         }
+      },
+      {
+         "id": 6,
+         "rarity": "common",
+         "permille": 20000,
+         "price": 3,
+         "content": {
+            "id": null,
+            "type": "coin",
+            "name": "3 WOW",
+            "src": "/wowin/test/coins/coin-low.svg"
+         }
+      },
+      {
+         "id": 7,
+         "rarity": "common",
+         "permille": 20000,
+         "price": 2,
+         "content": {
+            "id": null,
+            "type": "coin",
+            "name": "2 WOW",
+            "src": "/wowin/test/coins/coin-low.svg"
+         }
+      },
+      {
+         "id": 8,
+         "rarity": "common",
+         "permille": 37890,
+         "price": 1,
+         "content": {
+            "id": null,
+            "type": "coin",
+            "name": "1 WOW",
+            "src": "/wowin/test/coins/coin-low.svg"
+         }
+      }
+   ]
+}

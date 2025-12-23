@@ -48,8 +48,8 @@
                "common": 6
             },
             "srcs": {
-               "low": "test/cases/case-preview.png",
-               "high": "test/cases/case-glow.png"
+               "low": "/wowin/test/cases/case-preview.png",
+               "high": "/wowin/test/cases/case-glow.png"
             },
             "items": [
                {
@@ -61,7 +61,7 @@
                      "id": "5933671725160989227",
                      "type": "gift",
                      "name": "Precious Peach",
-                     "src": "test/models/precious-peach-512.webp"
+                     "src": "/wowin/test/models/precious-peach-512.webp"
                   }
                },
                {
@@ -73,7 +73,7 @@
                      "id": "6014675319464657779",
                      "type": "gift",
                      "name": "Low Rider",
-                     "src": "test/models/low-rider-512.webp"
+                     "src": "/wowin/test/models/low-rider-512.webp"
                   }
                },
                {
@@ -85,7 +85,7 @@
                      "id": "5933793770951673155",
                      "type": "gift",
                      "name": "Neko Helmet",
-                     "src": "test/models/neko-helmet-512.webp"
+                     "src": "/wowin/test/models/neko-helmet-512.webp"
                   }
                },
                {
@@ -97,7 +97,7 @@
                      "id": "5857140566201991735",
                      "type": "gift",
                      "name": "Vintage Cigar",
-                     "src": "test/models/vintage-cigar-512.webp"
+                     "src": "/wowin/test/models/vintage-cigar-512.webp"
                   }
                },
                {
@@ -109,7 +109,7 @@
                      "id": "6012435906336654262",
                      "type": "gift",
                      "name": "Snoop Cigar",
-                     "src": "test/models/snoop-cigar-512.webp"
+                     "src": "/wowin/test/models/snoop-cigar-512.webp"
                   }
                },
                {
@@ -121,7 +121,7 @@
                      "id": "5933543975653737112",
                      "type": "gift",
                      "name": "Whip Cupcake",
-                     "src": "test/models/whip-cupcake-512.webp"
+                     "src": "/wowin/test/models/whip-cupcake-512.webp"
                   }
                },
                {
@@ -133,7 +133,7 @@
                      "id": "5170594532177215681",
                      "type": "gift",
                      "name": "Lol Pop",
-                     "src": "test/models/lol-pop-512.webp"
+                     "src": "/wowin/test/models/lol-pop-512.webp"
                   }
                },
                {
@@ -145,7 +145,7 @@
                      "id": "5782988952268964995",
                      "type": "gift",
                      "name": "Desk Calendar",
-                     "src": "test/models/desk-calendar-512.webp"
+                     "src": "/wowin/test/models/desk-calendar-512.webp"
                   }
                },
                {
@@ -157,7 +157,7 @@
                      "id": "6005564615793050414",
                      "type": "gift",
                      "name": "Instant Ramen",
-                     "src": "test/models/instant-ramen-512.webp"
+                     "src": "/wowin/test/models/instant-ramen-512.webp"
                   }
                },
                {
@@ -169,7 +169,7 @@
                      "id": "5895603153683874485",
                      "type": "gift",
                      "name": "Fresh Socks",
-                     "src": "test/models/fresh-socks-512.webp"
+                     "src": "/wowin/test/models/fresh-socks-512.webp"
                   }
                },
                {
@@ -181,7 +181,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "130 WOW",
-                     "src": "test/coins/coin-medium.svg"
+                     "src": "/wowin/test/coins/coin-medium.svg"
                   }
                },
                {
@@ -193,7 +193,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "100 WOW",
-                     "src": "test/coins/coin-medium.svg"
+                     "src": "/wowin/test/coins/coin-medium.svg"
                   }
                },
                {
@@ -205,7 +205,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "80 WOW",
-                     "src": "test/coins/coin-medium.svg"
+                     "src": "/wowin/test/coins/coin-medium.svg"
                   }
                },
                {
@@ -217,7 +217,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "50 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -229,7 +229,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "30 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -241,7 +241,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "10 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                }
             ]
@@ -273,8 +273,8 @@
                "common": 5
             },
             "srcs": {
-               "low": "test/cases/case-preview.png",
-               "high": "test/cases/case-iceblock.png"
+               "low": "/wowin/test/cases/case-preview.png",
+               "high": "/wowin/test/cases/case-iceblock.png"
             },
             "items": [
                {
@@ -286,7 +286,7 @@
                      "id": "5895518353849582541",
                      "type": "gift",
                      "name": "Mighty Arm",
-                     "src": "test/models/mighty-arm-512.webp"
+                     "src": "/wowin/test/models/mighty-arm-512.webp"
                   }
                },
                {
@@ -298,7 +298,7 @@
                      "id": "5933671725160989227",
                      "type": "gift",
                      "name": "Precious Peach",
-                     "src": "test/models/precious-peach-512.webp"
+                     "src": "/wowin/test/models/precious-peach-512.webp"
                   }
                },
                {
@@ -310,7 +310,7 @@
                      "id": "6005797617768858105",
                      "type": "gift",
                      "name": "Artisan Brick",
-                     "src": "test/models/artisan-brick-512.webp"
+                     "src": "/wowin/test/models/artisan-brick-512.webp"
                   }
                },
                {
@@ -322,7 +322,7 @@
                      "id": "5902339509239940491",
                      "type": "gift",
                      "name": "Bling Binky",
-                     "src": "test/models/bling-binky-512.webp"
+                     "src": "/wowin/test/models/bling-binky-512.webp"
                   }
                },
                {
@@ -333,7 +333,7 @@
                   "content": {
                      "id": "5933793770951673155",
                      "name": "Neko Helmet",
-                     "src": "test/models/neko-helmet-512.webp"
+                     "src": "/wowin/test/models/neko-helmet-512.webp"
                   }
                },
                {
@@ -345,7 +345,7 @@
                      "id": "6014675319464657779",
                      "type": "gift",
                      "name": "Low Rider",
-                     "src": "test/models/low-rider-512.webp"
+                     "src": "/wowin/test/models/low-rider-512.webp"
                   }
                },
                {
@@ -357,7 +357,7 @@
                      "id": "5857140566201991735",
                      "type": "gift",
                      "name": "Vintage Cigar",
-                     "src": "test/models/vintage-cigar-512.webp"
+                     "src": "/wowin/test/models/vintage-cigar-512.webp"
                   }
                },
                {
@@ -369,7 +369,7 @@
                      "id": "5836780359634649414",
                      "type": "gift",
                      "name": "Voodoo Doll",
-                     "src": "test/models/voodoo-doll-512.webp"
+                     "src": "/wowin/test/models/voodoo-doll-512.webp"
                   }
                },
                {
@@ -381,7 +381,7 @@
                      "id": "5841632504448025405",
                      "type": "gift",
                      "name": "Mad Pumpkin",
-                     "src": "test/models/mad-pumpkin-512.webp"
+                     "src": "/wowin/test/models/mad-pumpkin-512.webp"
                   }
                },
                {
@@ -393,7 +393,7 @@
                      "id": "5837063436634161765",
                      "type": "gift",
                      "name": "Flying Broom",
-                     "src": "test/models/flying-broom-512.webp"
+                     "src": "/wowin/test/models/flying-broom-512.webp"
                   }
                },
                {
@@ -405,7 +405,7 @@
                      "id": "6005659564635063386",
                      "type": "gift",
                      "name": "Jack-in-the-Box",
-                     "src": "test/models/jack-in-the-box-512.webp"
+                     "src": "/wowin/test/models/jack-in-the-box-512.webp"
                   }
                },
                {
@@ -417,7 +417,7 @@
                      "id": "5882252952218894938",
                      "type": "gift",
                      "name": "Berry Box",
-                     "src": "test/models/berry-box-512.webp"
+                     "src": "/wowin/test/models/berry-box-512.webp"
                   }
                },
                {
@@ -429,7 +429,7 @@
                      "id": "5895603153683874485",
                      "type": "gift",
                      "name": "Fresh Socks",
-                     "src": "test/models/fresh-socks-512.webp"
+                     "src": "/wowin/test/models/fresh-socks-512.webp"
                   }
                },
                {
@@ -441,7 +441,7 @@
                      "id": "5980789805615678057",
                      "type": "gift",
                      "name": "Snow Mittens",
-                     "src": "test/models/snow-mittens-512.webp"
+                     "src": "/wowin/test/models/snow-mittens-512.webp"
                   }
                },
                {
@@ -453,7 +453,7 @@
                      "id": "6005564615793050414",
                      "type": "gift",
                      "name": "Instant Ramen",
-                     "src": "test/models/instant-ramen-512.webp"
+                     "src": "/wowin/test/models/instant-ramen-512.webp"
                   }
                },
                {
@@ -465,7 +465,7 @@
                      "id": "5170594532177215681",
                      "type": "gift",
                      "name": "Lol Pop",
-                     "src": "test/models/lol-pop-512.webp"
+                     "src": "/wowin/test/models/lol-pop-512.webp"
                   }
                },
                {
@@ -477,7 +477,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "150 WOW",
-                     "src": "test/coins/coin-medium.svg"
+                     "src": "/wowin/test/coins/coin-medium.svg"
                   }
                },
                {
@@ -489,7 +489,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "80 WOW",
-                     "src": "test/coins/coin-medium.svg"
+                     "src": "/wowin/test/coins/coin-medium.svg"
                   }
                },
                {
@@ -501,7 +501,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "40 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -513,7 +513,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "20 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -525,7 +525,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "10 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                }
             ]
@@ -554,8 +554,8 @@
                "common": 6
             },
             "srcs": {
-               "low": "test/cases/case-preview.png",
-               "high": "test/cases/case-fortune.png"
+               "low": "/wowin/test/cases/case-preview.png",
+               "high": "/wowin/test/cases/case-fortune.png"
             },
             "items": [
                {
@@ -567,7 +567,7 @@
                      "id": "5933793770951673155",
                      "type": "gift",
                      "name": "Neko Helmet",
-                     "src": "test/models/neko-helmet-512.webp"
+                     "src": "/wowin/test/models/neko-helmet-512.webp"
                   }
                },
                {
@@ -579,7 +579,7 @@
                      "id": "6012435906336654262",
                      "type": "gift",
                      "name": "Snoop Cigar",
-                     "src": "test/models/snoop-cigar-512.webp"
+                     "src": "/wowin/test/models/snoop-cigar-512.webp"
                   }
                },
                {
@@ -591,7 +591,7 @@
                      "id": "5825480571261813595",
                      "type": "gift",
                      "name": "Evil Eye",
-                     "src": "test/models/evil-eye-512.webp"
+                     "src": "/wowin/test/models/evil-eye-512.webp"
                   }
                },
                {
@@ -603,7 +603,7 @@
                      "id": "5882252952218894938",
                      "type": "gift",
                      "name": "Berry Box",
-                     "src": "test/models/berry-box-512.webp"
+                     "src": "/wowin/test/models/berry-box-512.webp"
                   }
                },
                {
@@ -615,7 +615,7 @@
                      "id": "5170594532177215681",
                      "type": "gift",
                      "name": "Lol Pop",
-                     "src": "test/models/lol-pop-512.webp"
+                     "src": "/wowin/test/models/lol-pop-512.webp"
                   }
                },
                {
@@ -627,7 +627,7 @@
                      "id": "5782988952268964995",
                      "type": "gift",
                      "name": "Desk Calendar",
-                     "src": "test/models/desk-calendar-512.webp"
+                     "src": "/wowin/test/models/desk-calendar-512.webp"
                   }
                },
                {
@@ -639,7 +639,7 @@
                      "id": "6005564615793050414",
                      "type": "gift",
                      "name": "Instant Ramen",
-                     "src": "test/models/instant-ramen-512.webp"
+                     "src": "/wowin/test/models/instant-ramen-512.webp"
                   }
                },
                {
@@ -651,7 +651,7 @@
                      "id": "6006064678835323371",
                      "type": "gift",
                      "name": "Happy Brownie",
-                     "src": "test/models/happy-brownie-512.webp"
+                     "src": "/wowin/test/models/happy-brownie-512.webp"
                   }
                },
                {
@@ -663,7 +663,7 @@
                      "id": "6023679164349940429",
                      "type": "gift",
                      "name": "Snake Box",
-                     "src": "test/models/snake-box-512.webp"
+                     "src": "/wowin/test/models/snake-box-512.webp"
                   }
                },
                {
@@ -675,7 +675,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "100 WOW",
-                     "src": "test/coins/coin-medium.svg"
+                     "src": "/wowin/test/coins/coin-medium.svg"
                   }
                },
                {
@@ -687,7 +687,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "50 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -699,7 +699,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "25 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -711,7 +711,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "10 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -723,7 +723,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "5 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -735,7 +735,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "3 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                }
             ]
@@ -764,8 +764,8 @@
                "common": 5
             },
             "srcs": {
-               "low": "test/cases/case-preview.png",
-               "high": "test/cases/case-swag.png"
+               "low": "/wowin/test/cases/case-preview.png",
+               "high": "/wowin/test/cases/case-swag.png"
             },
             "items": [
                {
@@ -777,7 +777,7 @@
                      "id": "6005797617768858105",
                      "type": "gift",
                      "name": "Artisan Brick",
-                     "src": "test/models/artisan-brick-512.webp"
+                     "src": "/wowin/test/models/artisan-brick-512.webp"
                   }
                },
                {
@@ -789,7 +789,7 @@
                      "id": "5868220813026526561",
                      "type": "gift",
                      "name": "Toy Bear",
-                     "src": "test/models/toy-bear-512.webp"
+                     "src": "/wowin/test/models/toy-bear-512.webp"
                   }
                },
                {
@@ -801,7 +801,7 @@
                      "id": "5933793770951673155",
                      "type": "gift",
                      "name": "Neko Helmet",
-                     "src": "test/models/neko-helmet-512.webp"
+                     "src": "/wowin/test/models/neko-helmet-512.webp"
                   }
                },
                {
@@ -813,7 +813,7 @@
                      "id": "5841689550203650524",
                      "type": "gift",
                      "name": "Sharp Tongue",
-                     "src": "test/models/sharp-tongue-512.webp"
+                     "src": "/wowin/test/models/sharp-tongue-512.webp"
                   }
                },
                {
@@ -825,7 +825,7 @@
                      "id": "5837063436634161765",
                      "type": "gift",
                      "name": "Flying Broom",
-                     "src": "test/models/flying-broom-512.webp"
+                     "src": "/wowin/test/models/flying-broom-512.webp"
                   }
                },
                {
@@ -837,7 +837,7 @@
                      "id": "5895544372761461960",
                      "type": "gift",
                      "name": "Bow Tie",
-                     "src": "test/models/bow-tie-512.webp"
+                     "src": "/wowin/test/models/bow-tie-512.webp"
                   }
                },
                {
@@ -849,7 +849,7 @@
                      "id": "6005659564635063386",
                      "type": "gift",
                      "name": "Jack-in-the-Box",
-                     "src": "test/models/jack-in-the-box-512.webp"
+                     "src": "/wowin/test/models/jack-in-the-box-512.webp"
                   }
                },
                {
@@ -860,7 +860,7 @@
                   "content": {
                      "id": "5900177027566142759",
                      "name": "Ice Cream",
-                     "src": "test/models/ice-cream-512.webp"
+                     "src": "/wowin/test/models/ice-cream-512.webp"
                   }
                },
                {
@@ -872,7 +872,7 @@
                      "id": "6005564615793050414",
                      "type": "gift",
                      "name": "Instant Ramen",
-                     "src": "test/models/instant-ramen-512.webp"
+                     "src": "/wowin/test/models/instant-ramen-512.webp"
                   }
                },
                {
@@ -884,7 +884,7 @@
                      "id": "5170594532177215681",
                      "type": "gift",
                      "name": "Lol Pop",
-                     "src": "test/models/lol-pop-512.webp"
+                     "src": "/wowin/test/models/lol-pop-512.webp"
                   }
                },
                {
@@ -896,7 +896,7 @@
                      "id": "6006064678835323371",
                      "type": "gift",
                      "name": "Happy Brownie",
-                     "src": "test/models/happy-brownie-512.webp"
+                     "src": "/wowin/test/models/happy-brownie-512.webp"
                   }
                },
                {
@@ -908,7 +908,7 @@
                      "id": "6023752243218481939",
                      "type": "gift",
                      "name": "Tama Gadget",
-                     "src": "test/models/tama-gadget-512.webp"
+                     "src": "/wowin/test/models/tama-gadget-512.webp"
                   }
                },
                {
@@ -920,7 +920,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "130 WOW",
-                     "src": "test/coins/coin-medium.svg"
+                     "src": "/wowin/test/coins/coin-medium.svg"
                   }
                },
                {
@@ -932,7 +932,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "80 WOW",
-                     "src": "test/coins/coin-medium.svg"
+                     "src": "/wowin/test/coins/coin-medium.svg"
                   }
                },
                {
@@ -944,7 +944,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "50 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -956,7 +956,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "20 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -968,7 +968,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "10 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                }
             ]
@@ -997,8 +997,8 @@
                "common": 3
             },
             "srcs": {
-               "low": "test/cases/case-preview-2.png",
-               "high": "test/cases/case-package.png"
+               "low": "/wowin/test/cases/case-preview-2.png",
+               "high": "/wowin/test/cases/case-package.png"
             },
             "items": [
                {
@@ -1010,7 +1010,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "300 WOW",
-                     "src": "test/coins/coin-medium.svg"
+                     "src": "/wowin/test/coins/coin-medium.svg"
                   }
                },
                {
@@ -1022,7 +1022,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "100 WOW",
-                     "src": "test/coins/coin-medium.svg"
+                     "src": "/wowin/test/coins/coin-medium.svg"
                   }
                },
                {
@@ -1034,7 +1034,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "50 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -1046,7 +1046,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "20 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -1058,7 +1058,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "10 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -1070,7 +1070,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "5 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -1082,7 +1082,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "3 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -1094,7 +1094,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "2 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                },
                {
@@ -1106,7 +1106,7 @@
                      "id": null,
                      "type": "coin",
                      "name": "1 WOW",
-                     "src": "test/coins/coin-low.svg"
+                     "src": "/wowin/test/coins/coin-low.svg"
                   }
                }
             ]
