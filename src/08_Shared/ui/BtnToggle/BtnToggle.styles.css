@@ -1,0 +1,86 @@
+/* =================================
+   Btn Toggle
+==================================== */
+
+.btn-toggle {
+   width: 44px;
+   height: 44px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 6px;
+   border: 2px solid var(--app-color-shadow-2);
+   background: var(--app-bg-color-1);
+
+   box-shadow:
+      0 2px 0 rgba(0, 0, 0, 0.2),
+      inset 0 3px 0 rgba(255, 255, 255, 0.3),
+      inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+
+   cursor: pointer;
+
+   will-change: background;
+   transition: background 100ms ease-in;
+}
+
+.btn-toggle_active {
+   background: var(--app-bg-color-5);
+}
+
+/* =================================
+   Btn Toggle Content
+==================================== */
+
+@keyframes btn-toggle-active {
+   0% {
+      transform: scale(1);
+   }
+
+   10% {
+      transform: scale(0.94);
+   }
+
+   60% {
+      transform: scale(1.1);
+   }
+
+   100% {
+      transform: scale(1);
+   }
+}
+
+.btn-toggle-content {
+   flex: 0 0 28px;
+   width: 28px;
+   height: 28px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   will-change: transform;
+}
+
+.btn-toggle_active .btn-toggle-content {
+   animation: btn-toggle-active 100ms ease-in;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

@@ -52,6 +52,21 @@
    transition: opacity 100ms ease-in-out;
 }
 
+@keyframes hiddenImg {
+   from {
+      opacity: 1;
+   }
+
+   to {
+      opacity: 0;
+   }
+}
+
+.img-hidden {
+   animation: hiddenImg 50ms ease-in forwards;
+   animation-delay: 100ms;
+}
+
 /* =================================
    MEDIA
 ==================================== */

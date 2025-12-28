@@ -5,8 +5,9 @@
 
 /* Rubik */
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-@font-face {
+/* @font-face {
    font-family: 'Rubik';
    src: url('/fonts/Rubik-Regular.woff2') format('ttf');
    font-weight: 400;
@@ -46,13 +47,14 @@
    src: url('/fonts/Rubik-Black.woff2') format('ttf');
    font-weight: 900;
    font-display: swap;
-}
+} */
 
 
 /* JetBrains Mono */
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
-@font-face {
+/* @font-face {
    font-family: 'JetBrains Mono';
    src: url('/fonts/JetBrainsMono-Regular.woff2') format('ttf');
    font-weight: 400;
@@ -85,6 +87,6 @@
    src: url('/fonts/JetBrainsMono-ExtraBold.woff2') format('ttf');
    font-weight: 800;
    font-display: swap;
-}
+} */
 
 /* ============ END :) ============ */

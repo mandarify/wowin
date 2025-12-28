@@ -1,5 +1,14 @@
 /* =================================
    Price
+
+   Переменные:
+
+   --app-price-color-text
+   --app-price-color-border
+   --app-price-color-shadow
+   --app-price-font-size
+   --app-price-font-weight
+
 ==================================== */
 
 .price {
@@ -13,10 +22,11 @@
 }
 
 .price-value {
-   --game-color-text: var(--app-color-gold-3);
-   --game-color-border: var(--app-color-burgundy-2);
-   --game-color-shadow: var(--app-color-shadow-2);
-   --game-color-font-weight: 700;
+   --game-color-text: var(--app-price-color-text);
+   --game-color-border: var(--app-price-color-border);
+   --game-color-shadow: var(--app-price-color-shadow);
+   --game-color-font-weight: var(--app-price-font-weight);
+   --game-color-font-lh: 1;
 
    width: max-content;
 }
@@ -32,9 +42,6 @@
    display: flex;
    align-items: center;
    justify-content: center;
-
-   border-radius: calc(var(--price-coin-size) / 2);
-   background-color: var(--app-color-shadow-2);
 }
 
 .price-coin-img {
@@ -134,6 +141,33 @@
 
 .price-size-30 {
    --game-color-font-size: 30px;
+}
+
+/* =================================
+   Animation
+==================================== */
+
+@keyframes ping {
+   0% {
+      transform: scale(1);
+   }
+
+   10% {
+      transform: scale(1.08);
+   }
+
+   20% {
+      transform: scale(1);
+   }
+
+   100% {
+      transform: scale(1);
+   }
+}
+
+.ani_ping {
+   will-change: transform;
+   animation: ping 4s cubic-bezier(0.33, 1, 0.68, 1) infinite;
 }
 
 /* =================================

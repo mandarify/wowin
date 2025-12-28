@@ -32,20 +32,19 @@ const AppRoutes = (): JSX.Element => {
    return (
       <Routes location={location} key={location.pathname}>
 
-         <Route path="/" element={<Layouts.Page />}>
-
-
-            <Route index element={<Navigate to="/game" replace />} />
-
-
-            <Route path="/game">
-               <Route index element={<Pages.basic.Home />} />
-               <Route path="case" element={<Pages.games.Case />} />
-            </Route>
+         <Route element={<Layouts.Page />}>
 
             <Route path="/profile">
                <Route index element={<Pages.basic.Profile />} />
             </Route>
+
+         </Route>
+
+         <Route element={<Layouts.FullPage />}>
+
+            <Route path="/" element={<Navigate to="/game" replace />} />
+
+            <Route path="/game" element={<Pages.basic.Home />} />
 
             <Route path="/inventory">
                <Route index element={<Pages.basic.Inventory />} />
@@ -67,10 +66,26 @@ const AppRoutes = (): JSX.Element => {
                <Route index element={<Pages.basic.Settings />} />
             </Route>
 
-            <Route path="*" element={<Navigate to="/404" replace />} />
-            <Route path="404" element={<Pages.technical.E404 />} />
+         </Route>
+
+         <Route element={<Layouts.GameCase />}>
+
+            <Route path="/game/case/package" element={<Pages.games.Case name="package" />} />
+            <Route path="/game/case/fortune" element={<Pages.games.Case name="fortune" />} />
+            <Route path="/game/case/swag" element={<Pages.games.Case name="swag" />} />
+            <Route path="/game/case/iceblock" element={<Pages.games.Case name="iceblock" />} />
+            <Route path="/game/case/glow" element={<Pages.games.Case name="glow" />} />
 
          </Route>
+
+         <Route element={<Layouts.FullPage />}>
+
+            <Route path="/404" element={<Pages.technical.E404 />} />
+
+            <Route path="*" element={<Navigate to="/404" replace />} />
+
+         </Route>
+
 
       </Routes>
    );

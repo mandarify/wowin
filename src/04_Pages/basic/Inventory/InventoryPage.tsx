@@ -13,9 +13,10 @@ import type { JSX } from "react";
 // import type IInventoryPage from "./InventoryPage.types";
 
 // ########## СТИЛИ
-// import "./InventoryPage.styles.css";
+import "./InventoryPage.styles.css";
 
 // ########## КОМПОНЕНТЫ
+import { TitleMain } from "@shared/ui";
 
 // ########## МОДУЛИ
 
@@ -26,7 +27,9 @@ import type { JSX } from "react";
 const InventoryPage = (): JSX.Element => {
    return (
       <div className="content-page">
-         <h1>ЯЩИК</h1>
+         <div className="page-inventory">
+            <TitleMain title="ящик" icon="box" />
+         </div>
       </div>
    );
 };

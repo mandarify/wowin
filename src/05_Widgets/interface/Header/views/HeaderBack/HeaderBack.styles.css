@@ -1,0 +1,27 @@
+/* =================================
+   Header Back
+==================================== */
+
+.header-back {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 40px;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

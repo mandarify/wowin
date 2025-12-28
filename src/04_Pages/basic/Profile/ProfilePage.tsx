@@ -13,9 +13,10 @@ import type { JSX } from "react";
 // import type IProfilePage from "./ProfilePage.types";
 
 // ########## СТИЛИ
-// import "./ProfilePage.styles.css";
+import "./ProfilePage.styles.css";
 
 // ########## КОМПОНЕНТЫ
+import { TitleMain } from "@shared/ui";
 
 // ########## МОДУЛИ
 
@@ -25,8 +26,10 @@ import type { JSX } from "react";
 
 const ProfilePage = (): JSX.Element => {
    return (
-      <div className="content-page">
-         <h1>ПРОФИЛЬ</h1>
+      <div className="content-fullpage">
+         <div className="page-profile">
+            <TitleMain title="Профиль" icon="chess-queen" />
+         </div>
       </div>
    );
 };

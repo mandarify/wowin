@@ -36,11 +36,14 @@ const ImgProgress = ({ srcs, alt, blur, extraClass }: IImgProgress): JSX.Element
    useEffect(() => {
       const imgBox = imgBoxRef.current;
       const imgHigh = imgHighRef.current;
-      if (!imgBox || !imgHigh) return;
+      const imgLow = imgLowRef.current;
+      if (!imgBox || !imgHigh || !imgLow) return;
 
       // Проверить изображение в кеше.
       if (imgHigh.complete && imgHigh.naturalWidth > 0) {
          imgHigh.style.transition = 'none';
+         imgLow.style.opacity = '0';
+         imgLow.style.animation = 'none';
       }
 
    }, []);
@@ -58,10 +61,12 @@ const ImgProgress = ({ srcs, alt, blur, extraClass }: IImgProgress): JSX.Element
    const loadedImgHigh = useCallback(() => {
       const imgBox = imgBoxRef.current;
       const imgHigh = imgHighRef.current;
-      if (!imgBox || !imgHigh) return;
+      const imgLow = imgLowRef.current;
+      if (!imgBox || !imgHigh || !imgLow) return;
 
       imgHigh.classList.remove('img-progress_hidden');
       imgBox.classList.remove("_empty-shimmer");
+      imgLow.classList.add("img-hidden");
       isLoaded.current = true;
 
    }, []);

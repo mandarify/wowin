@@ -1,0 +1,231 @@
+/* =================================
+   Case Page
+==================================== */
+
+.page-case {
+   padding: 0 15px;
+   width: 100%;
+
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 40px auto auto 1fr;
+}
+
+/* =================================
+   Case Bonus
+==================================== */
+
+.case-bonus {
+   width: 100%;
+   height: max-content;
+
+   cursor: pointer;
+}
+
+/* =================================
+   Case Top
+==================================== */
+
+.case-top {
+   padding: 0 15px;
+   width: 100%;
+   height: max-content;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: start;
+}
+
+.case-picture {
+   width: 160px;
+   aspect-ratio: 1/1;
+}
+
+.case-box {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.case-data {
+   margin: 0 0 15px 0;
+   width: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.case-title {
+   --game-color-text: var(--style-color-5);
+   --game-color-border: var(--app-color-shadow-2);
+   --game-color-shadow: var(--app-color-shadow-2);
+   --game-color-font-size: 30px;
+   --game-color-font-weight: 800;
+
+   width: max-content;
+}
+
+.case-title>span {
+   text-transform: uppercase;
+}
+
+.case-btn-list {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+/* =================================
+   Case Wheel
+==================================== */
+
+.case-wheel {
+   margin: 20px 0;
+   width: 100%;
+   height: 134px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.case-wheel-container {
+   position: relative;
+   flex: 0 0 504px;
+   width: 504px;
+   height: 134px;
+
+   border: 2px solid var(--app-color-shadow-2);
+   border-radius: 2px solid var(--app-color-shadow-2);
+   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.case-wheel-border {
+   position: absolute;
+   left: 0;
+
+   width: 100%;
+   height: 10px;
+
+   overflow: visible;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background:
+      repeating-linear-gradient(-50deg,
+         rgba(0, 0, 0, 0) 0px,
+         rgba(0, 0, 0, 0.4) 1px,
+         rgba(0, 0, 0, 0.4) 9px,
+         rgba(0, 0, 0, 0) 10px,
+         transparent 10px,
+         transparent 20px),
+      var(--style-color-decor);
+
+   background-blend-mode: soft-light;
+}
+
+.case-wheel-line-crystal {
+   flex: 0 0 530px;
+   width: 530px;
+   height: 30px;
+}
+
+.case-wheel-border-top {
+   top: 0;
+   box-shadow:
+      0 2px 0 var(--app-color-shadow-2),
+      inset 0 3px 0 rgba(255, 255, 255, 0.3),
+      inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.case-wheel-border-bottom {
+   bottom: 0;
+   box-shadow:
+      0 -2px 0 var(--app-color-shadow-2),
+      inset 0 3px 0 rgba(255, 255, 255, 0.3),
+      inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.case-center-line {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+
+   width: 8px;
+   height: 12px;
+
+   border-style: solid;
+   border-color: var(--app-color-shadow-2);
+   background-color: tomato;
+
+   box-shadow:
+      inset -1px 0 0 rgba(255, 255, 255, 0.3),
+      inset 1px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.case-center-line-top {
+   border-width: 0px 1px 1px 1px;
+   top: 12px;
+}
+
+.case-center-line-bottom {
+   border-width: 1px 1px 0 1px;
+   bottom: 12px;
+}
+
+/* =================================
+   Case Bottom
+==================================== */
+
+.case-bottom {
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: end;
+   gap: 12px;
+}
+
+.btn-play-text {
+   --app-price-color-text: var(--app-text-color-2);
+   --game-color-text: var(--app-text-color-2);
+   --game-color-border: var(--app-color-shadow-2);
+   --game-color-shadow: var(--app-color-shadow-2);
+   --game-color-font-size: 30px;
+   --game-color-font-weight: 800;
+
+   width: max-content;
+}
+
+.case-resourses {
+   width: 100%;
+   height: 44px;
+
+   display: grid;
+   grid-template-columns: 44px 1fr 44px;
+   grid-template-rows: 44px;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

@@ -13,5 +13,5 @@
  */
 export default interface ITitleMain {
    title: string;
-   icon: "swords";
+   icon: "swords" | "box" | "shop" | "chess-queen" | "cup" | "settings" | "notification";
 };

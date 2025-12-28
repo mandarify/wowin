@@ -10,13 +10,13 @@
 import type { JSX } from "react";
 
 // ########## ТИПЫ
-// import type IMenu from "./Menu.types";
+import type IMenu from "./Menu.types";
 
 // ########## СТИЛИ
 import "./Menu.styles.css";
 
 // ########## КОМПОНЕНТЫ
-import { IconDouble, MenuItem, MenuTopItem } from "@shared/ui";
+import MenuMain from "./views/MenuMain/MenuMain";
 
 // ########## МОДУЛИ
 
@@ -24,22 +24,17 @@ import { IconDouble, MenuItem, MenuTopItem } from "@shared/ui";
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
 
-const Menu = (): JSX.Element => {
+const Menu = ({ type }: IMenu): JSX.Element => {
    return (
-      <menu id="menu">
+      <menu id="menu" className={type === "empty" ? '_empty' : ''}>
 
          <div className="menu-backdrop _unuse"></div>
 
          <div className="menu-container">
-            <div className="menu-content">
 
-               <MenuItem title="профиль" path="/profile"><IconDouble.User size={24} /></MenuItem>
-               <MenuItem title="ящик" path="/inventory"><IconDouble.Box size={24} /></MenuItem>
-               <MenuTopItem path="/game"><IconDouble.Swords size={54} /></MenuTopItem>
-               <MenuItem title="магазин" path="/shop"><IconDouble.Shop size={24} /></MenuItem>
-               <MenuItem title="меню" path="/menu"><IconDouble.Menu size={24} /></MenuItem>
+            {(!type || type === "main") && <MenuMain />}
+            {type === "empty" && <div className="menu-content menu-empty" />}
 
-            </div>
          </div>
 
       </menu>

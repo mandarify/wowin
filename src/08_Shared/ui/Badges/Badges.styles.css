@@ -1,0 +1,63 @@
+/* =================================
+   Badges
+
+   Переменные:
+   --app-badge-bg
+   --app-badge-color-text
+   --app-badge-color-border
+
+   Стили
+   .badge-style-new
+
+==================================== */
+
+.badge {
+
+   padding: 1px 4px 0 4px;
+   width: max-content;
+   height: 16px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 2px;
+   border: 1px solid rgba(255, 255, 255, .5);
+
+   color: var(--app-badge-color-text);
+   background: var(--app-badge-bg);
+}
+
+.badge-style-new {
+   color: var(--app-text-color-3);
+   /* background: #C20E2C; */
+   background: linear-gradient(to bottom right, #dc2f2f 0%, #ab2a96 100%);
+}
+
+.badge-style-limit {
+   color: var(--app-text-color-3);
+   background: #008241;
+}
+
+.badge-style-timer {
+   color: var(--app-text-color-3);
+   background: #0E71C2;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

@@ -13,9 +13,10 @@ import type { JSX } from "react";
 // import type IMenuPage from "./MenuPage.types";
 
 // ########## СТИЛИ
-// import "./MenuPage.styles.css";
+import "./MenuPage.styles.css";
 
 // ########## КОМПОНЕНТЫ
+import { TitleMain } from "@shared/ui";
 
 // ########## МОДУЛИ
 
@@ -26,7 +27,9 @@ import type { JSX } from "react";
 const MenuPage = (): JSX.Element => {
    return (
       <div className="content-page">
-         <h1>ТОП</h1>
+         <div className="page-menu">
+            <TitleMain title="топ" icon="cup" />
+         </div>
       </div>
    );
 };

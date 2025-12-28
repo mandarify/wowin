@@ -4,11 +4,15 @@
 
 :root {
 
+   /* +++++ TELEGRAM +++++ */
+
+   --tg-safe-top: 30px;
+
    /* +++++ NORMALIZE +++++ */
 
    /* Шрифты */
    --app-font-family: "Rubik", sans-serif;
-   --app-font-family-mono: "Geist Mono", sans-serif;
+   --app-font-family-mono: "JetBrains Mono", sans-serif;
    --app-font-size: 12px;
    --app-font-weight: 600;
    --app-font-style: normal;
@@ -35,18 +39,24 @@
 
    /* SHIMMER */
    --app-block-shimmer-bg: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0) 100%);
+   --app-block-shimmer-bg-2: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
 
    /* TEXT */
    --app-text-color: rgba(208, 188, 255, 1);
    --app-text-color-2: rgb(255, 239, 190, 1);
+   --app-text-color-3: rgba(255, 243, 186, 1);
+   --app-text-color-4: #C3C3C3;
 
    /* BG */
    --app-bg-color-1: rgba(63, 46, 101, 1);
    --app-bg-color-2: rgba(46, 32, 78, 1);
    --app-bg-color-3: rgb(37, 25, 66);
    --app-bg-color-4: rgb(22, 15, 40);
+   --app-bg-color-5: #FF9705;
+   --app-bg-color-6: #ffb930;
 
    --app-block-bg-color: #6245A1;
+   --app-block-bg-color-2: #404040;
 
    /* COLORS */
 
@@ -64,9 +74,18 @@
    --app-color-purple-9: #4A347C;
    --app-color-purple-10: #7451BE;
 
+   --app-color-purple-11: #4F0F61;
+   --app-color-purple-12: #71178C;
+
    --app-color-gold-1: #FFBA59;
    --app-color-gold-2: #C77C31;
    --app-color-gold-3: #FFAA05;
+   --app-color-gold-4: #F5AF1B;
+   --app-color-gold-5: #ffa805;
+
+   --app-color-brown-1: #3F2308;
+   --app-color-brown-2: #875510;
+   --app-color-brown-3: #5C2600;
 
    --app-color-red-0: rgb(218, 0, 0);
    --app-color-red-1: #EB415D;
@@ -94,6 +113,15 @@
 
    /* +++++ STYLES COLORS DEFAULT +++++ */
 
+   /* Icons */
+   --svg-icon-color: #ffffff;
+
+   /* Icon Basic */
+   --basic-icon-color-fill: var(--app-text-color);
+   --basic-icon-color-border: var(--app-color-shadow-2);
+   --basic-icon-color-shadow: var(--app-color-shadow-2);
+
+   /* Styles */
    --style-color-1: #370946;
    --style-color-2: #691580;
    --style-color-3: #9739B1;
@@ -102,7 +130,14 @@
    --style-color-6: #5C2600;
    --style-color-7: #FF86E1;
    --style-color-8: #23062D;
+   --style-color-9: #FF8710;
 
+   --style-color-10: #585858;
+   --style-color-11: #B5B5B5;
+   --style-color-decor: linear-gradient(to right, #585858, #B5B5B5, #585858);
+
+
+   /* Game Text */
    --game-color-text: var(--style-color-7);
    --game-color-border: var(--app-color-shadow-2);
    --game-color-shadow: var(--app-color-shadow-2);
@@ -110,12 +145,92 @@
    --game-color-font-weight: 500;
    --game-color-font-lh: 1;
 
+   /* Price */
+   --app-price-color-text: var(--app-color-gold-3);
+   --app-price-color-border: var(--app-color-burgundy-2);
+   --app-price-color-shadow: var(--app-color-shadow-2);
+   --app-price-font-weight: 700;
+
+   /* Cards */
    --count-cards-color-bg: var(--style-color-8);
    --count-cards-color-text: var(--style-color-7);
    --count-cards-color-border: var(--style-color-3);
 
+   /* Badges */
+   --app-badge-bg: var(--app-block-bg-color);
+   --app-badge-color-text: var(--app-text-color-3);
+   --app-badge-color-border: rgba(255, 255, 255, .5);
+
+   /* Popup */
+   --popup-color-bg: #23062D;
+   --popup-color-bg-second: #23062D;
+   --popup-color-text: #ffa805;
+   --popup-color-text-second: var(--app-color-gold-1);
+   --popup-color-border: #C77C31;
+   --popup-color-topic-edge: #370946;
+   --popup-color-topic-center: #691580;
+   --popup-color-btn-edge: #ffa805;
+   --popup-color-btn-center: #F5AF1B;
+   --popup-color-btn-text: var(--app-text-color-2);
+   --popup-bottom-padding: 0px;
+
+   /* Input Checkbox */
+   --input-checkbox-color-text: var(--app-text-color-2);
+   --input-checkbox-color-bg: #C87832;
+   --input-checkbox-color-bg-active: #C87832;
+
+   /* Rarity */
+   --rarity-color-bg: var(--app-color-shadow-2);
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #0F3258;
+   --rarity-color-bg-edge: #5E98D9;
+   --rarity-color-bg-center: #DAECFF;
+
+   /* Loading */
+   --loading-bg-color: rgba(46, 32, 78, 1);
+   --loading-border-part-color: var(--app-color-gold-5);
+
    /* ===== STYLES COLORS DEFAULT ===== */
 
+}
+
+/* =================================
+   RARITY
+==================================== */
+
+[data-rarity="legendary"] {
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #744200;
+   --rarity-color-bg-edge: #E49439;
+   --rarity-color-bg-center: #FFC482;
+}
+
+[data-rarity="epic"] {
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #741B1B;
+   --rarity-color-bg-edge: #F04646;
+   --rarity-color-bg-center: #FD7F7F;
+}
+
+[data-rarity="rare"] {
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #4E1455;
+   --rarity-color-bg-edge: #C64DD3;
+   --rarity-color-bg-center: #F7ADFF;
+}
+
+[data-rarity="unique"] {
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #391D57;
+   --rarity-color-bg-edge: #A04FF6;
+   --rarity-color-bg-center: #CC9CFF;
+}
+
+[data-rarity="common"] {
+   --rarity-color-text: #FFDBB2;
+   --rarity-color-border: #0F3258;
+   --rarity-color-bg-edge: #5E98D9;
+   --rarity-color-bg-center: #DAECFF;
 }
 
 /* =================================
@@ -131,7 +246,21 @@
    --style-color-6: #5C2600;
    --style-color-7: #FF86E1;
    --style-color-8: #23062D;
+   --style-color-9: #ffa805;
+
+   --style-color-10: #F7BA20;
+   --style-color-11: #FF9B37;
+   --style-color-decor: linear-gradient(to right, #F7BA20, #FF9B37, #F7BA20);
 }
+
+[data-theme="purgold"] {
+   --app-bg-color-1: #691580;
+   --app-bg-color-2: #370946;
+   --app-bg-color-4: #30063e;
+   --app-text-color: #FF86E1;
+   --basic-icon-color-fill: #FF86E1;
+}
+
 
 [data-style="ice"] {
    --style-color-1: #00599B;
@@ -141,19 +270,43 @@
    --style-color-5: #71F6FF;
    --style-color-6: #024678;
    --style-color-7: #BEE8FF;
-   --style-color-8: #003963;
+   --style-color-8: #003357;
+   --style-color-9: #c2e7ff;
+
+   --style-color-10: #97AAB8;
+   --style-color-11: #EBF3F9;
+   --style-color-decor: linear-gradient(to right, #97AAB8, #EBF3F9, #97AAB8);
 }
 
-[data-style="tree"] {
-   --style-color-1: #B16715;
-   --style-color-2: #AE680D;
-   --style-color-3: #ECCE86;
-   --style-color-4: rgba(0, 0, 0, .15);
-   --style-color-5: #FFA448;
-   --style-color-6: #412000;
-   --style-color-7: #FFC86E;
-   --style-color-8: #472908;
+[data-theme="ice"] {
+   --app-bg-color-1: #007CD7;
+   --app-bg-color-2: #0c286f;
+   --app-bg-color-4: #083354;
+   --app-text-color: #BDE8FF;
+   --basic-icon-color-fill: #BDE8FF;
 }
+
+
+[data-style="tree"] {
+   --style-color-1: #3F2E65;
+   /* --style-color-1: #B16715; */
+   --style-color-2: #2E204E;
+   /* --style-color-2: #AE680D; */
+   --style-color-3: #aa9acd;
+   --style-color-4: rgba(0, 0, 0, .15);
+   --style-color-5: #B8ACFF;
+   --style-color-6: #412000;
+   --style-color-7: #d1bff8;
+   --style-color-8: #472908;
+   --style-color-9: #fca751;
+
+   --style-color-10: #585858;
+   --style-color-11: #B5B5B5;
+   --style-color-decor: linear-gradient(to right, #585858, #B5B5B5, #585858);
+}
+
+[data-theme="tree"] {}
+
 
 [data-style="zoom"] {
    --style-color-1: #5F3DBE;
@@ -163,7 +316,55 @@
    --style-color-5: #FFA4EB;
    --style-color-6: #520028;
    --style-color-7: #FFC0D9;
-   --style-color-8: #492572;
+   --style-color-8: #301152;
+   --style-color-9: #ffadf0;
+
+   --style-color-10: #9B98E0;
+   --style-color-11: #FB83E5;
+   --style-color-decor: linear-gradient(to right, #9B98E0, #FB83E5, #F0C383, #FB83E5, #FF63AF);
+}
+
+[data-theme="zoom"] {
+   --app-bg-color-1: #9b3cb6;
+   --app-bg-color-2: #462f92;
+   --app-bg-color-4: #362378;
+   --app-text-color: #FFCED5;
+   --basic-icon-color-fill: #FFCED5;
+}
+
+
+/* =================================
+   Popup Styles
+==================================== */
+
+[data-popup="default"] {
+   --popup-color-bg: #2E204E;
+   --popup-color-bg-second: #1c1039;
+   --popup-color-text: #ffa805;
+   --popup-color-text-second: var(--app-color-gold-1);
+   --popup-color-border: #C77C31;
+   --popup-color-topic-edge: #3F2E65;
+   /* --popup-color-topic-edge: #590f70; */
+   --popup-color-topic-center: #563f86;
+   /* --popup-color-topic-center: #71178C; */
+   --popup-color-btn-edge: #ffa805;
+   --popup-color-btn-center: #F5AF1B;
+   --popup-color-btn-text: var(--app-text-color-2);
+}
+
+[data-popup="info"] {
+   --popup-color-bg: #2E204E;
+   /* --popup-color-bg: #4F0F61; */
+   --popup-color-bg-second: #1c1039;
+   /* --popup-color-bg-second: #23062D; */
+   --popup-color-text: #FFEFBE;
+   --popup-color-text-second: var(--app-color-gold-1);
+   --popup-color-border: #C77C31;
+   --popup-color-topic-edge: #b46724;
+   --popup-color-topic-center: #C3742F;
+   --popup-color-btn-edge: #C0732F;
+   --popup-color-btn-center: #E2893C;
+   --popup-color-btn-text: #FFEFBE;
 }
 
 /* =================================

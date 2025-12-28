@@ -18,8 +18,9 @@ import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./routes/AppRoutes";
 import AuthProvider from "./providers/AuthProvider/AuthProvider";
 import LocationProvider from "./providers/LocationProvider/LocationProvider";
+import TelegramProvider from "./providers/TelegramProvider/TelegramProvider";
 
-import { Menu, Header } from "@widgets/interface";
+import { FixedModalProvider } from "@shared/contexts/FixedModalContext/FixedModalContext";
 
 // ########## МОДУЛИ
 
@@ -30,15 +31,19 @@ import { Menu, Header } from "@widgets/interface";
 const App = (): JSX.Element => {
    return (
       <BrowserRouter basename="/wowin">
-         <AuthProvider>
-            <LocationProvider key="app">
+         <TelegramProvider>
+            <AuthProvider>
+               <LocationProvider key="app">
 
-               <Header />
-               <AppRoutes />
-               <Menu />
+                  <FixedModalProvider>
 
-            </LocationProvider>
-         </AuthProvider>
+                     <AppRoutes />
+
+                  </FixedModalProvider>
+
+               </LocationProvider>
+            </AuthProvider>
+         </TelegramProvider>
       </BrowserRouter>
    );
 };

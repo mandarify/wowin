@@ -1,0 +1,64 @@
+/* =================================
+   PAGE LAYOUT
+==================================== */
+
+.content-fullpage {
+   padding: 0 20px 0 20px;
+   width: 100%;
+}
+
+.content-page {
+   padding: 50px 20px 0 20px;
+   width: 100%;
+}
+
+.content-game {
+   padding: 50px 0 0 0;
+   width: 100%;
+
+   display: flex;
+   min-height: calc(100lvh - var(--tg-safe-top) - 82px)
+}
+
+/* =================================
+   Test
+==================================== */
+
+h1 {
+   width: 100%;
+   padding: 0 0 20px 0;
+}
+
+h3 {
+   padding: 0 0 10px 0;
+   font-weight: 500;
+}
+
+.test {
+   margin-bottom: 50px;
+   width: 100%;
+   height: 200px;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+
+pre {
+   margin: 10px 0;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

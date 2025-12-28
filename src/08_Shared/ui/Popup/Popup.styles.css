@@ -1,0 +1,236 @@
+/* =================================
+   Popup
+
+    Переменные:
+    --popup-bottom-padding
+
+==================================== */
+
+.popup {
+
+   z-index: 10;
+   position: relative;
+
+   padding: 2px;
+   max-height: 650px;
+   width: 100%;
+
+   height: 650px;
+
+   border-radius: 12px;
+   border: 2px solid var(--popup-color-border);
+   background-color: var(--app-color-shadow-2);
+}
+
+/* =================================
+   Content
+==================================== */
+
+.popup-content {
+
+   position: relative;
+   padding: 50px 0 var(--popup-bottom-padding) 0;
+   width: 100%;
+   height: 100%;
+
+   border-radius: 9px;
+   background:
+      url("../../../01_Assets/02_images/swords-pattern.svg"),
+      var(--popup-color-bg);
+
+   background-repeat: repeat, no-repeat;
+   background-size: 86px 86px, auto;
+   background-position: center;
+   background-blend-mode: soft-light;
+}
+
+.popup-padding-1 {
+   --popup-bottom-padding: 84px;
+}
+
+.popup-padding-2 {
+   --popup-bottom-padding: 116px;
+}
+
+/* =================================
+   Topic
+==================================== */
+
+.popup-topic {
+   z-index: 2;
+   overflow: hidden;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+
+   width: 100%;
+   height: 50px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 9px 9px 0 0;
+   border-bottom: 2px solid var(--app-color-shadow-2);
+
+   background:
+      repeating-linear-gradient(-75deg,
+         rgba(0, 0, 0, 0) 0px,
+         rgba(0, 0, 0, 0.2) 1px,
+         rgba(0, 0, 0, 0.2) 19px,
+         rgba(0, 0, 0, 0) 20px,
+         transparent 20px,
+         transparent 40px),
+      linear-gradient(to right, var(--popup-color-topic-edge), var(--popup-color-topic-center), var(--popup-color-topic-edge));
+
+   background-blend-mode: soft-light;
+
+   box-shadow:
+      inset 0 3px 0 rgba(255, 255, 255, 0.3),
+      inset 0 -3px 0 rgba(0, 0, 0, 0.4);
+
+}
+
+.popup-topic-content {
+   --game-color-text: var(--popup-color-text);
+   --game-color-border: #000;
+   --game-color-shadow: #000;
+   --game-color-font-size: 22px;
+   --game-color-font-weight: 800;
+
+   width: max-content;
+}
+
+.popup-topic-content>span {
+   text-transform: uppercase;
+}
+
+/* =================================
+   Button Close
+==================================== */
+
+.popup-close {
+   z-index: 3;
+   position: absolute;
+   top: -8px;
+   right: -8px;
+
+   width: 36px;
+   height: 36px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 18px;
+   border: 2px solid var(--popup-color-border);
+   background-color: var(--app-color-shadow-2);
+}
+
+/* =================================
+   Button Main
+==================================== */
+
+.popup-bottom {
+   z-index: 2;
+   overflow: hidden;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
+   padding: 10px 6px 6px 6px;
+   width: 100%;
+   height: max-content;
+
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: center;
+   gap: 12px;
+}
+
+.popup-checkbox {
+   padding: 0 4px;
+
+   max-width: 100%;
+   width: max-content;
+
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 6px;
+
+   cursor: pointer;
+}
+
+.popup-checkbox-content {
+   --game-color-text: var(--popup-color-btn-text);
+   --game-color-border: #000;
+   --game-color-shadow: #000;
+   --game-color-font-size: 16px;
+   --game-color-font-weight: 600;
+
+   width: max-content;
+}
+
+.popup-btn {
+
+   padding: 0 0 4px 0;
+   width: 100%;
+   height: 60px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 6px 6px 8px 8px;
+   border: 2px solid var(--app-color-shadow-2);
+
+   background:
+      repeating-linear-gradient(-75deg,
+         rgba(0, 0, 0, 0) 0px,
+         rgba(0, 0, 0, 0.2) 1px,
+         rgba(0, 0, 0, 0.2) 19px,
+         rgba(0, 0, 0, 0) 20px,
+         transparent 20px,
+         transparent 40px),
+      linear-gradient(to right, var(--popup-color-btn-edge), var(--popup-color-btn-center), var(--popup-color-btn-edge));
+
+   background-blend-mode: soft-light;
+
+   box-shadow:
+      inset 0 3px 0 rgba(255, 255, 255, 0.3),
+      inset 0 -3px 0 rgba(0, 0, 0, 0.4);
+
+   cursor: pointer;
+}
+
+.popup-btn-content {
+   --game-color-text: var(--popup-color-btn-text);
+   --game-color-border: #000;
+   --game-color-shadow: #000;
+   --game-color-font-size: 32px;
+   --game-color-font-weight: 800;
+
+   width: max-content;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

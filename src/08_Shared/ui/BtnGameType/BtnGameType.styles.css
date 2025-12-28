@@ -1,0 +1,40 @@
+/* =================================
+   Btn Game Type
+==================================== */
+
+.btn-gametype {
+
+   --svg-icon-color: var(--app-color-gold-3);
+
+   flex: 0 0 26px;
+   width: 26px;
+   height: 26px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 2px;
+   border: 2px solid var(--app-color-gold-3);
+   background-color: var(--app-color-brown-1);
+
+   cursor: pointer;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

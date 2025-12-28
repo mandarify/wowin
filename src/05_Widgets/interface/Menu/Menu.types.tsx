@@ -6,5 +6,10 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
-// export default interface IMenu { };
+/**
+ * Меню приложения.
+ * - `type?`   : вид отображения меню.
+ */
+export default interface IMenu {
+   type?: "empty" | "main";
+};

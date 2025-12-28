@@ -18,12 +18,14 @@ import { useLocation } from "react-router-dom";
 // ########## КОМПОНЕНТЫ
 
 // ########## МОДУЛИ
-
+import useBackButton from "@shared/hooks/useBackButton";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
 
 const LocationProvider = (props: { children: React.ReactNode }): React.ReactNode => {
+
+   useBackButton();
 
    const location = useLocation();
 

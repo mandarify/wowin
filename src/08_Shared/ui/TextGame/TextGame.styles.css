@@ -11,13 +11,9 @@
 
 ==================================== */
 
-/* .game-text {
-   --game-color-text: #fff;
-   --game-color-border: #000;
-   --game-color-shadow: #000;
-   --game-color-font-size: 14px;
-   --game-color-font-weight: 500;
-} */
+.game-text {
+   position: relative;
+}
 
 /* =================================
    Text Game Line (Topic)
@@ -47,7 +43,7 @@
    z-index: 1;
    position: absolute;
 
-   top: 0.08em;
+   top: 0.1em;
    left: 0;
 
    color: var(--app-color-shadow-2);
@@ -92,7 +88,24 @@
 
    color: var(--app-color-shadow-2);
    -webkit-text-stroke: 0.05em var(--app-color-shadow-2);
-   transform: translateY(0.08em);
+   transform: translateY(0.1em);
+}
+
+/* =================================
+   Gradient
+==================================== */
+
+.game-text-gradient {
+   background: var(--game-color-text);
+
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+   background-clip: text;
+   color: transparent;
+
+   paint-order: stroke fill;
+   -webkit-text-stroke: 0.05em var(--app-color-shadow-2);
 }
 
 /* =================================

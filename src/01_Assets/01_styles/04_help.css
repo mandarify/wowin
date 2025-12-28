@@ -2,6 +2,11 @@
    HELP
 ==================================== */
 
+/* Блокировка скролла. */
+.no-scroll {
+   overflow: hidden;
+}
+
 /* Включает взаимодействие с элементов и его масу. */
 ._use {
    -ms-user-select: auto;
@@ -34,12 +39,24 @@
    user-select: none;
 }
 
+._empty {
+   pointer-events: none;
+}
+
 /* Placeholder Shimmer. */
+._shimmer,
+._shimmer-before,
 ._empty-shimmer {
+
+   --shimmer-duration: 2s;
+   --shimmer-delay: 500ms;
+
    overflow: hidden;
    position: relative;
 }
 
+._shimmer::after,
+._shimmer-before::before,
 ._empty-shimmer::after {
    content: "";
 
@@ -54,12 +71,27 @@
 
    transform: translateX(-100%);
 
-   background: var(--app-block-shimmer-bg);
-   animation: block-shimmer 2s infinite;
-
    filter: blur(5px);
 
    pointer-events: none;
+}
+
+._shimmer::after {
+   background: var(--app-block-shimmer-bg-2);
+   animation: block-shimmer var(--shimmer-duration) infinite;
+   animation-delay: var(--shimmer-delay);
+}
+
+._shimmer-before::before {
+   z-index: 2;
+   background: var(--app-block-shimmer-bg-2);
+   animation: block-shimmer var(--shimmer-duration) infinite;
+   animation-delay: var(--shimmer-delay);
+}
+
+._empty-shimmer::after {
+   background: var(--app-block-shimmer-bg);
+   animation: block-shimmer var(--shimmer-duration) infinite;
 }
 
 /* =================================

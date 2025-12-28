@@ -24,6 +24,9 @@ import "./IconBasic.styles.css";
 
 import Plus from "./icons/Plus";
 import Close from "./icons/Close";
+import Reply from "./icons/Reply";
+import Info from "./icons/Info";
+import Palette from "./icons/Palette";
 
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
@@ -31,6 +34,9 @@ import Close from "./icons/Close";
 const IconBasic = {
    Plus,
    Close,
+   Reply,
+   Info,
+   Palette,
 };
 
 export default IconBasic;

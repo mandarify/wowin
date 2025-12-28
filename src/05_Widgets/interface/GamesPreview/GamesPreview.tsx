@@ -19,10 +19,12 @@ import type { TGamesData } from "@shared/types/data.types";
 import "./GamesPreview.styles.css";
 
 // ########## КОМПОНЕНТЫ
-import { BtnBasic, PreviewCase } from "@shared/ui";
+import { BtnBasic } from "@shared/ui";
+import PreviewCase from "./Previews/PreviewCase/PreviewCase";
+import { GameIcons } from "@shared/consts/data.consts";
 
 // ########## МОДУЛИ
-import { GameIcons } from "@shared/consts/data.consts";
+import { sortCases } from "@shared/funcs/sort";
 
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
@@ -30,7 +32,7 @@ import { GameIcons } from "@shared/consts/data.consts";
 // FETCH
 const getGamesData = async (): Promise<TGamesData | null> => {
    try {
-      const res = await fetch('test/data/games.json', { method: "GET" });
+      const res = await fetch('/wowin/test/data/games.json', { method: "GET" });
       if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
       const data = await res.json();
       if (!data || Object.keys(data).length === 0) throw new Error('Empty.');
@@ -77,7 +79,6 @@ const GamesPreview = (): JSX.Element => {
 
       const load = async () => {
          const res = await getGamesData();
-         console.log(res);
 
          if (res) {
             const timeoutId = setTimeout(() => {
@@ -140,7 +141,7 @@ const GamesPreview = (): JSX.Element => {
                      </>
                   }
 
-                  {data.categories[category].type === "case" && <>{data.case && data.case.games.sort((a, b) => a.position - b.position).map(game => <PreviewCase key={`case-${game.id}`} game={game} />)}</>}
+                  {data.categories[category].type === "case" && <>{data.case && sortCases(data.case.games).map(game => <PreviewCase key={`case-${game.id}`} game={game} />)}</>}
                   {data.categories[category].type === "duel" && <div className="game-item games-duel">DUEL</div>}
                   {data.categories[category].type === "pvp" && <div className="game-item games-pvp">PvP</div>}
                   {data.categories[category].type === "solo" && <div className="game-item games-solo">SOLO</div>}

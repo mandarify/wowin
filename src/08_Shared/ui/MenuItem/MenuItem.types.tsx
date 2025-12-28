@@ -32,4 +32,5 @@ export default interface IMenuItem {
    title: string;
    path: string;
    children: JSX.Element;
+   position?: "first" | "last";
 };

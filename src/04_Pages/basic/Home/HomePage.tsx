@@ -30,10 +30,11 @@ import { GamesPreview } from "@widgets/interface";
 
 /* Sliders Data. */
 const slidersData: TSlideData[] = [
-   { id: 1, srcs: { low: 'test/actions/news-1-low.jpg', high: 'test/actions/news-1.jpg' }, title: 'Кейс Сияние.', link: '/game/case-glow' },
-   { id: 2, srcs: { low: 'test/actions/news-2-low.jpg', high: 'test/actions/news-2.jpg' }, title: 'Кейс Льдина.', link: '/game/case-iceblock' },
-   { id: 3, srcs: { low: 'test/actions/news-3-low.jpg', high: 'test/actions/news-3.jpg' }, title: 'Кейс Фортуна.', link: '/game/case-fortune' },
-   { id: 4, srcs: { low: 'test/actions/news-4-low.jpg', high: 'test/actions/news-4.jpg' }, title: 'Кейс Стиль.', link: '/game/case-swag' }
+   { id: 1, srcs: { low: 'test/actions/news-5-low.jpg', high: 'test/actions/news-5.jpg' }, title: 'Посылка.', link: '/game/case/package' },
+   { id: 2, srcs: { low: 'test/actions/news-1-low.jpg', high: 'test/actions/news-1.jpg' }, title: 'Кейс Сияние.', link: '/game/case/glow' },
+   { id: 3, srcs: { low: 'test/actions/news-2-low.jpg', high: 'test/actions/news-2.jpg' }, title: 'Кейс Льдина.', link: '/game/case/iceblock' },
+   { id: 4, srcs: { low: 'test/actions/news-3-low.jpg', high: 'test/actions/news-3.jpg' }, title: 'Кейс Фортуна.', link: '/game/case/fortune' },
+   { id: 5, srcs: { low: 'test/actions/news-4-low.jpg', high: 'test/actions/news-4.jpg' }, title: 'Кейс Стиль.', link: '/game/case/swag' }
 ];
 
 

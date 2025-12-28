@@ -1,0 +1,188 @@
+/* =================================
+   Card Case
+==================================== */
+
+.card-case {
+
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: start;
+}
+
+/* =================================
+   Top
+==================================== */
+
+.card-case-top {
+
+   padding: 10px 10px 20px 10px;
+   width: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: start;
+}
+
+/* Picture */
+
+.card-case-picture {
+   flex: 0 0 auto;
+   width: 120px;
+   height: 120px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.card-case-box {
+   width: 120px;
+   height: 120px;
+}
+
+.card-case-spins {
+   overflow: visible;
+   position: relative;
+}
+
+.card-case-spins::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   aspect-ratio: 1 / 1;
+
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(2);
+
+   background: conic-gradient(from 0deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+
+   /* лучи */
+   --rays: repeating-conic-gradient(transparent 0deg 9.8deg, rgba(255, 255, 255, 1) 10deg 19.6deg, transparent 19.8deg 20deg);
+
+   /* рассеивание к краю */
+   --fade: radial-gradient(circle at center, rgba(255, 255, 255, 1) 0%, transparent 70%);
+
+   mask: var(--rays), var(--fade);
+   mask-composite: intersect;
+
+   -webkit-mask: var(--rays), var(--fade);
+   -webkit-mask-composite: source-in;
+}
+
+/* Data */
+
+.card-case-data {
+   margin: 8px 0 16px 0;
+   width: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.card-case-desc {
+   --game-color-text: var(--popup-color-text-second);
+   --game-color-border: var(--app-color-shadow-2);
+   --game-color-shadow: var(--app-color-shadow-2);
+   --game-color-font-size: 14px;
+   --game-color-font-weight: 700;
+   --game-color-font-lh: 1.2em;
+
+   max-width: 270px;
+   width: 100%;
+}
+
+.card-case-desc>span {
+   text-align: center;
+}
+
+/* Cards */
+
+.cards-stats {
+   --count-cards-color-bg: var(--popup-color-bg-second);
+   --count-cards-color-text: var(--popup-color-btn-text);
+   --count-cards-color-border: var(--app-color-shadow-2);
+
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 12px;
+}
+
+/* =================================
+   Bottom
+==================================== */
+
+.card-case-bottom {
+
+   overflow: hidden;
+   overflow-y: auto;
+
+   padding: 10px 12px 10px 12px;
+   width: 100%;
+   height: max-content;
+
+   scroll-behavior: smooth;
+   scrollbar-width: none;
+
+   /* Маска: прозрачные края → видимое ядро */
+   -webkit-mask-image: linear-gradient(to bottom,
+         rgba(0, 0, 0, 0.6),
+         rgba(0, 0, 0, 1) 5%,
+         rgba(0, 0, 0, 1) 95%,
+         rgba(0, 0, 0, 0.6));
+
+   -webkit-mask-size: 100% 100%;
+   -webkit-mask-repeat: no-repeat;
+
+   mask-image: linear-gradient(to bottom,
+         rgba(0, 0, 0, 0.6),
+         rgba(0, 0, 0, 1) 5%,
+         rgba(0, 0, 0, 1) 95%,
+         rgba(0, 0, 0, 0.6));
+
+   mask-size: 100% 100%;
+   mask-repeat: no-repeat;
+
+}
+
+.card-case-bottom::-webkit-scrollbar {
+   display: none;
+}
+
+/* =================================
+   Case List
+==================================== */
+
+.card-case-list {
+   display: grid;
+   grid-template-columns: repeat(3, minmax(0, 1fr));
+   grid-gap: 6px;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

@@ -13,9 +13,10 @@ import type { JSX } from "react";
 // import type IShopPage from "./ShopPage.types";
 
 // ########## СТИЛИ
-// import "./ShopPage.styles.css";
+import "./ShopPage.styles.css";
 
 // ########## КОМПОНЕНТЫ
+import { TitleMain } from "@shared/ui";
 
 // ########## МОДУЛИ
 
@@ -26,7 +27,9 @@ import type { JSX } from "react";
 const ShopPage = (): JSX.Element => {
    return (
       <div className="content-page">
-         <h1>МАГАЗИН</h1>
+         <div className="page-shop">
+            <TitleMain title="магазин" icon="shop" />
+         </div>
       </div>
    );
 };

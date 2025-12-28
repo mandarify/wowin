@@ -6,5 +6,10 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
-// export default interface IHeader { };
+/**
+ * Шапка.
+ * - `type?`   : тип контент шапки.
+ */
+export default interface IHeader {
+   type?: "empty" | "main" | "back";
+};

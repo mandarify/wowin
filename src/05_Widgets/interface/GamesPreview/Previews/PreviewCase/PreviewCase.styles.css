@@ -1,0 +1,247 @@
+/* =================================
+   Preview Case
+==================================== */
+
+.games-preview-case {
+
+   overflow: hidden;
+   position: relative;
+
+   width: 100%;
+   height: 100%;
+
+   display: grid;
+   grid-template-columns: 102px 1fr 100px;
+   grid-template-rows: 1fr;
+
+   border-radius: 4px;
+   border: 2px solid var(--style-color-3);
+   background: linear-gradient(to top right, var(--style-color-1), var(--style-color-2));
+
+   cursor: pointer;
+}
+
+.spins::before {
+   content: "";
+
+   position: absolute;
+   width: 100%;
+   aspect-ratio: 1/1;
+
+   top: 50%;
+   left: -34%;
+   transform-origin: center center;
+   transform: translateY(-50%) scale(2);
+
+   background: conic-gradient(from 0deg, var(--style-color-4) 0%, var(--style-color-4) 100%);
+   mask: repeating-conic-gradient(transparent 0deg 5.8deg, rgba(255, 255, 255, 0.9) 6deg 11.6deg, transparent 11.8deg 12deg);
+}
+
+/* =================================
+   Picture
+==================================== */
+
+.game-preview-case-picture {
+
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: end;
+}
+
+.games-preview-case-box {
+   width: 90px;
+   height: 90px;
+}
+
+/* =================================
+   Title
+==================================== */
+
+.game-preview-case-title {
+
+   z-index: 2;
+   position: relative;
+
+   padding: 12px 6px 12px 6px;
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.preview-case-text {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+}
+
+.preview-case-topic {
+   --game-color-text: var(--style-color-5);
+   --game-color-border: var(--style-color-6);
+   --game-color-shadow: var(--app-color-shadow-2);
+   --game-color-font-size: 16px;
+   --game-color-font-weight: 700;
+}
+
+.preview-case-desc {
+   --game-color-text: var(--style-color-7);
+   --game-color-border: var(--app-color-shadow-2);
+   --game-color-shadow: var(--app-color-shadow-2);
+   --game-color-font-size: 11px;
+   --game-color-font-weight: 500;
+   --game-color-font-lh: 1.2;
+}
+
+/* =================================
+   Price
+==================================== */
+
+.game-preview-case-price {
+
+   z-index: 2;
+   position: relative;
+
+   padding: 12px 6px 12px 0;
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   justify-content: end;
+   gap: 4px;
+}
+
+.game-preview-case-price_old {
+   margin-right: 14px;
+}
+
+/* =================================
+   Sale
+==================================== */
+
+.preview-sale {
+
+   z-index: 10;
+   position: absolute;
+   width: 48px;
+   height: 48px;
+
+   top: 1px;
+   left: 1px;
+}
+
+.preview-sale-banner {
+   width: 100%;
+   height: 100%;
+}
+
+.preview-sale::after {
+   content: attr(data-percent);
+
+   position: absolute;
+   top: 36%;
+   left: 36%;
+   transform: translate(-50%, -50%) rotate(-45deg);
+
+   font-family: var(--app-font-family-mono);
+   font-size: 14px;
+   font-weight: 700;
+
+   color: var(--app-text-color-2);
+}
+
+/* =================================
+   Badges
+==================================== */
+
+.preview-badges {
+   z-index: 10;
+
+   position: absolute;
+   right: 8px;
+   top: -4px;
+
+   width: max-content;
+   height: max-content;
+
+   display: flex;
+   align-items: start;
+   justify-content: end;
+   gap: 4px;
+}
+
+.preview-badges-item {
+
+   --app-badge-color-border: var(--style-color-3);
+
+   width: max-content;
+   height: max-content;
+
+   border-radius: 2px;
+   background-color: var(--app-color-shadow-2);
+   box-shadow: 0 1px 0 rgba(0, 0, 0, .2);
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {
+   .games-preview-case {
+      grid-template-columns: 92px 1fr 90px;
+   }
+
+   .games-preview-case-box {
+      width: 84px;
+      height: 84px;
+   }
+
+   .spins::before {
+      left: -36%;
+   }
+}
+
+@media (max-width: 375px) {
+
+   .games-preview-case {
+      grid-template-columns: 84px 1fr 80px;
+   }
+
+   .games-preview-case-box {
+      width: 80px;
+      height: 80px;
+   }
+
+   .spins::before {
+      left: -38%;
+   }
+
+   .preview-case-text {
+      gap: 4px;
+   }
+
+   .preview-case-topic {
+      --game-color-font-size: 14px;
+   }
+
+   .preview-case-desc {
+      --game-color-font-size: 10px;
+   }
+}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

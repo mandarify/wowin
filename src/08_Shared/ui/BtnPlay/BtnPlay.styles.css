@@ -1,0 +1,198 @@
+/* =================================
+   Btn Play
+
+   Переменные:
+   --btn-play-duraction
+
+==================================== */
+
+.btn-play {
+
+   position: relative;
+   overflow: visible;
+
+   padding: 2px;
+   width: 100%;
+   height: 66px;
+
+   border-radius: 6px;
+   background-color: var(--app-color-shadow-2);
+
+   -webkit-tap-highlight-color: transparent;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+}
+
+/* =================================
+   Btn Backdrop
+==================================== */
+
+.btn-play-container {
+   overflow: hidden;
+   position: relative;
+   width: 100%;
+   height: 100%;
+
+   border-radius: 5px;
+   background: linear-gradient(to right, var(--app-bg-color-2), var(--app-bg-color-1), var(--app-bg-color-2));
+   background-blend-mode: soft-light;
+   box-shadow: 0 6px 0 rgba(0, 0, 0, 0.25), inset 0 4px 0 rgba(255, 255, 255, 0.4), inset 0 -4px 0 rgba(0, 0, 0, 0.3);
+
+   cursor: pointer;
+}
+
+.btn-play-backdrop {
+   overflow: hidden;
+   z-index: 1;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+
+   will-change: transform;
+}
+
+.btn-play-backdrop::after {
+   content: '';
+   z-index: 1;
+
+   position: absolute;
+   top: 0;
+   left: 0;
+
+   width: 200%;
+   height: 100%;
+
+   background: repeating-linear-gradient(-75deg,
+         rgba(0, 0, 0, 0) 0px,
+         rgba(0, 0, 0, 0.4) 1px,
+         rgba(0, 0, 0, 0.4) 19px,
+         rgba(0, 0, 0, 0) 20px,
+         transparent 20px,
+         transparent 40px),
+      linear-gradient(to right, var(--app-bg-color-5), var(--app-bg-color-6), var(--app-bg-color-5));
+
+   background-blend-mode: soft-light;
+
+   box-shadow: inset 0 4px 0 rgba(255, 255, 255, 0.4), inset 0 -4px 0 rgba(0, 0, 0, 0.3);
+
+   will-change: transform;
+}
+
+/* =================================
+   Btn Content
+==================================== */
+
+.btn-play-content {
+   overflow: hidden;
+   z-index: 2;
+
+   position: absolute;
+   bottom: 12px;
+   left: 8px;
+
+   width: calc(100% - 16px);
+   height: 46px;
+}
+
+.btn-play-content-list {
+   perspective: 200px;
+
+   position: relative;
+
+   width: 100%;
+   height: 100%;
+
+   will-change: transform;
+   transition: transform 200ms ease-out;
+}
+
+.btn-play-content-item {
+   position: absolute;
+   left: 0;
+
+   width: 100%;
+   height: 46px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   transform-style: preserve-3d;
+   transition: transform 300ms ease-out;
+}
+
+.btn-play-content-item._top {
+   transform: translateY(-100%) rotateX(40deg);
+}
+
+.btn-play-content-item._center {
+   transform: translateY(0%) rotateX(0deg);
+}
+
+.btn-play-content-item._bottom {
+   transform: translateY(100%) rotateX(-40deg);
+}
+
+
+/* =================================
+   Btn Start
+==================================== */
+
+@keyframes btn-play-start {
+   from {
+      transform: translateX(-100%);
+   }
+
+   to {
+      transform: translateX(0);
+   }
+}
+
+@keyframes btn-play-start-track {
+   from {
+      transform: translateX(-50%);
+   }
+
+   to {
+      transform: translateX(0);
+   }
+}
+
+.btn-play._start {
+   animation: storm 300ms ease-in-out;
+}
+
+.btn-play:active {
+   touch-action: manipulation;
+   animation: storm 300ms ease-in-out infinite;
+}
+
+.btn-play._start .btn-play-backdrop {
+   animation: btn-play-start var(--btn-play-duraction) cubic-bezier(0.45, 0.05, 0.55, 0.95) forwards;
+}
+
+.btn-play._start .btn-play-backdrop::after {
+   animation: btn-play-start-track var(--btn-play-duraction) linear forwards;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

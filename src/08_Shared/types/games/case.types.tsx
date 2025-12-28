@@ -62,6 +62,7 @@ export type GameCaseItem = {
    id: number,
    rarity: GameCaseItemRarity,
    permille: number,
+   price: number,
    content: GameCaseItemContent,
 };
 
@@ -69,6 +70,8 @@ export type GameCaseItem = {
  * Полное описание игры Кейс.
  */
 export type GameCase = GameTopic & {
+   /* Unix дата создания кейса. */
+   dtCreate: number,
    /** Стиль отображения кейса. */
    style: GameCaseStyle,
    /** Цена на покупки кейса. */

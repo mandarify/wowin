@@ -1,0 +1,30 @@
+/* =================================
+   Badge Timer
+==================================== */
+
+.badge-timer {}
+
+.badge-timer-content {
+   font-family: var(--app-font-family-mono);
+   font-size: 9px;
+   font-weight: 600;
+   text-transform: lowercase;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

@@ -1,0 +1,115 @@
+/* =================================
+   Game Case Item
+==================================== */
+
+.card-case-item {
+   padding: 2px;
+   width: 100%;
+   aspect-ratio: 1/1;
+
+   border-radius: 4px;
+   background-color: var(--rarity-color-bg);
+
+   will-change: transform;
+   transition: transform 100ms ease-in-out;
+
+   cursor: pointer;
+}
+
+.card-case-item:active {
+   touch-action: manipulation;
+   animation: storm 300ms ease-in-out infinite;
+}
+
+.card-case-item-box {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 16px;
+   align-items: center;
+   justify-items: center;
+
+   border-radius: 3px;
+   border: 2px solid var(--rarity-color-border);
+   background: radial-gradient(circle at center center, var(--rarity-color-bg-center) 0%, var(--rarity-color-bg-edge) 100%);
+
+   box-shadow:
+      inset 0 2px 0 rgba(255, 255, 255, 0.4),
+      inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-case-item-img {
+   margin: 0 0 10px 0;
+   width: 56px;
+   height: 56px;
+   align-self: end;
+}
+
+.card-case-item-title {
+   --game-color-text: var(--rarity-color-text);
+   --game-color-border: var(--app-color-shadow-2);
+   --game-color-shadow: var(--app-color-shadow-2);
+   --game-color-font-size: 9px;
+   --game-color-font-weight: 700;
+
+   align-self: start;
+   width: max-content;
+}
+
+.card-case-item-box._shimmer {
+   --shimmer-duration: 3s;
+}
+
+/* =================================
+   Percent
+==================================== */
+
+.card-case-item-percent {
+   position: absolute;
+   top: 4px;
+   left: 0px;
+
+   font-family: var(--app-font-family-mono);
+   font-size: 8px;
+   font-weight: 800;
+
+   padding: 2px 4px 2px 5px;
+   height: 12px;
+
+   border-radius: 0 2px 2px 0;
+   background-color: var(--rarity-color-border);
+
+   color: var(--rarity-color-text);
+}
+
+/* =================================
+   Price
+==================================== */
+
+.card-case-item-price {
+   position: absolute;
+   top: 4px;
+   right: 4px;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

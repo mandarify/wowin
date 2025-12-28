@@ -21,21 +21,8 @@ import "./WheelFortuneMini.styles.css";
 
 // ########## МОДУЛИ
 import useVibrate from "@shared/hooks/useVibrate";
+import { toWebTimeFormat } from "@shared/funcs/time";
 
-
-/* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
-const getTimeFormat = (sec: number): string => {
-   const h = Math.floor(sec / 3600);
-   const m = Math.floor((sec % 3600) / 60);
-   const s = sec % 60;
-
-   const pad = (n: number) => String(n).padStart(2, "0");
-
-   return h
-      ? `${pad(h)}:${pad(m)}:${pad(s)}`
-      : `${pad(m)}:${pad(s)}`;
-};
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
@@ -101,7 +88,7 @@ const WheelFortuneMini = (): JSX.Element => {
          </div>
 
          <div className="wheel-fortune-mini__bottom">
-            <span className="wheel-timer _unselect">{time === 0 ? "ИГРА" : getTimeFormat(time)}</span>
+            <span className="wheel-timer _unselect">{time === 0 ? "ИГРА" : toWebTimeFormat(time)}</span>
          </div>
 
       </div>

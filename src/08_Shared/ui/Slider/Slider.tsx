@@ -71,24 +71,8 @@ const Slider = ({
       setIndex(prev => (prev - 1 < 0 ? data.length - 1 : prev - 1));
    }, [data.length]);
 
-   /* Автопрокрутка */
-   useEffect(() => {
-      if (intervalId.current !== null) {
-         clearInterval(intervalId.current);
-      }
 
-      intervalId.current = window.setInterval(nextSlide, nextSlideMs);
-
-      return () => {
-         if (intervalId.current !== null) {
-            clearInterval(intervalId.current);
-            intervalId.current = null;
-         }
-      };
-   }, [index, nextSlide, nextSlideMs]);
-
-   /* Клик по слайдеру */
-
+   /* Пауза */
    const pause = () => {
       const pauseId = setTimeout(() => {
          isAnimate.current = false;
@@ -96,13 +80,33 @@ const Slider = ({
       }, animationMs);
    };
 
-   const step = (fun: () => void) => {
+   /* Прокрут слайдера. */
+   const step = useCallback((fun: () => void) => {
       if (isAnimate && isAnimate.current) return;
       isAnimate.current = true;
       fun();
       pause();
-   };
+   }, []);
 
+   /* Автопрокрутка */
+   useEffect(() => {
+      if (intervalId.current !== null) {
+         clearInterval(intervalId.current);
+      }
+
+      intervalId.current = window.setInterval(() => {
+         step(nextSlide);
+      }, nextSlideMs);
+
+      return () => {
+         if (intervalId.current !== null) {
+            clearInterval(intervalId.current);
+            intervalId.current = null;
+         }
+      };
+   }, [index, nextSlide, nextSlideMs, step]);
+
+   /* Клик по слайдеру */
    const handleClick = (e: React.MouseEvent) => {
 
       if (isSwiping.current) {

@@ -7,6 +7,7 @@
 */
 
 // ########## STANDART
+import React from "react";
 import type { JSX } from "react";
 
 // ########## ТИПЫ
@@ -23,10 +24,10 @@ import "./TextGame.styles.css";
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
 
-const TextGame = ({ type, content, extraClass }: ITextGame): JSX.Element => {
+const TextGame = ({ type, content, gradient, extraClass }: ITextGame): JSX.Element => {
    return (
       <div className={`game-text game-${type} ${extraClass ?? ''}`.trim()}>
-         <span className={`game-${type}-main _unselect`}>{content}</span>
+         <span className={`game-${type}-main _unselect ${gradient ? 'game-text-gradient' : ''}`.trim()}>{content}</span>
          <span className={`game-${type}-shadow _unselect`}>{content}</span>
       </div>
    );
@@ -35,4 +36,4 @@ const TextGame = ({ type, content, extraClass }: ITextGame): JSX.Element => {
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-export default TextGame;
+export default React.memo(TextGame);

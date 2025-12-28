@@ -1,0 +1,29 @@
+/* =================================
+   Text Bade
+==================================== */
+
+.badge-text {}
+
+.badge-text-content {
+   font-size: 9px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

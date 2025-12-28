@@ -13,9 +13,10 @@ import type { JSX } from "react";
 // import type IMailPage from "./MailPage.types";
 
 // ########## СТИЛИ
-// import "./MailPage.styles.css";
+import "./MailPage.styles.css";
 
 // ########## КОМПОНЕНТЫ
+import { TitleMain } from "@shared/ui";
 
 // ########## МОДУЛИ
 
@@ -26,7 +27,9 @@ import type { JSX } from "react";
 const MailPage = (): JSX.Element => {
    return (
       <div className="content-page">
-         <h1>ПОЧТА</h1>
+         <div className="page-mail">
+            <TitleMain title="почта" icon="notification" />
+         </div>
       </div>
    );
 };

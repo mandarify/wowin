@@ -1,0 +1,126 @@
+/* =================================
+   Wheel Horizontal
+==================================== */
+
+.wheel-h {
+   position: relative;
+   width: 100%;
+   height: 100%;
+
+   touch-action: none;
+}
+
+.wheel-h-list {
+   overflow: hidden;
+   position: relative;
+
+   width: 100%;
+   height: 100%;
+}
+
+/* =================================
+   Wheel Horizontal Element
+==================================== */
+
+.wheel-h-element {
+
+   position: absolute;
+   top: 15px;
+   right: 0;
+
+   width: 100px;
+   height: 100px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.wheel-h-element-container {
+
+   padding: 1px;
+   width: 90px;
+   height: 80px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 6px;
+   background-color: var(--rarity-color-bg);
+   will-change: transform;
+}
+
+.wheel-h-element-content {
+   position: relative;
+   overflow: hidden;
+
+   padding: 10px 15px;
+   width: 100%;
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border-radius: 5.5px;
+   border: 2px solid var(--rarity-color-border);
+   background: radial-gradient(circle at center center, var(--rarity-color-bg-center) 0%, var(--rarity-color-bg-edge) 100%);
+   box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.4), inset 0 -2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.wheel-h-element-img {
+   flex: 0 0 60px;
+   width: 60px;
+   height: 60px;
+}
+
+/* =================================
+   Wheel Horizontal Element
+==================================== */
+
+.wheel-h-element_price .wheel-h-element-content {
+   padding: 6px 0;
+   flex-direction: column;
+   justify-content: start;
+}
+
+.wheel-h-element_price::after {
+   content: attr(data-price);
+
+   font-size: 10px;
+   font-weight: 900;
+
+   position: absolute;
+   left: 50%;
+   bottom: 18px;
+   transform: translateX(-50%);
+
+   color: var(--app-color-gold-5);
+   -webkit-text-stroke: 0.08em var(--app-color-shadow-2);
+}
+
+
+.wheel-h-element_price .wheel-h-element-img {
+   flex: 0 0 50px;
+   width: 50px;
+   height: 50px;
+}
+
+/* =================================
+   MEDIA
+==================================== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 425px) {}
+
+@media (max-width: 375px) {}
+
+@media (max-width: 320px) {}
+
+/* ============ END :) ============ */

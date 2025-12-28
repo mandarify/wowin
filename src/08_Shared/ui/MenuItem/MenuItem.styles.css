@@ -46,6 +46,14 @@
    animation: blesk 500ms forwards;
 }
 
+.menu-item-first .menu-item-link {
+   border-radius: 6px 6px 6px 18px;
+}
+
+.menu-item-last .menu-item-link {
+   border-radius: 6px 6px 18px 6px;
+}
+
 /* =================================
    TOP
 ==================================== */
