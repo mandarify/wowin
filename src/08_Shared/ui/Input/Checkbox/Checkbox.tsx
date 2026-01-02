@@ -19,16 +19,13 @@ import "./Checkbox.styles.css";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const Checkbox = ({ flag }: ICheckbox): JSX.Element => {
    return (
       <div className={`checkbox ${flag ? 'checkbox_active' : ''}`.trim()} />
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

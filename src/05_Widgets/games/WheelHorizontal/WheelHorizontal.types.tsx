@@ -6,7 +6,6 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
 // ########## STANDART
 import React from "react";
 
@@ -21,9 +20,7 @@ import CaseLogic from "@shared/modules/CaseLogic/CaseLogic";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 export interface IWheelHorizontalElement {
    data: CaseLogicElement;

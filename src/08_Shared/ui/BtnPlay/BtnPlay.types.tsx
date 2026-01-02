@@ -6,7 +6,6 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
 // ########## STANDART
 import React from "react";
 
@@ -18,9 +17,15 @@ import React from "react";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
+export type BtnPlayLabelPosition = "top" | "center" | "bottom";
+
+export type BtnPlayLabel = {
+   id: string;
+   element: React.ReactNode;
+   position: BtnPlayLabelPosition;
+};
 
 export default interface IBtnPlay {
    delay: number;
@@ -30,4 +35,3 @@ export default interface IBtnPlay {
    },
    action: () => void;
 };
-

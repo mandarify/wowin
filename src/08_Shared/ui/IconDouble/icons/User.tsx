@@ -6,7 +6,6 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
 // ########## STANDART
 import type { JSX } from "react";
 
@@ -19,9 +18,7 @@ import type IconDouble from "../IconDouble.types";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const User = ({ size }: IconDouble): JSX.Element => {
    return (
@@ -35,7 +32,6 @@ const User = ({ size }: IconDouble): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

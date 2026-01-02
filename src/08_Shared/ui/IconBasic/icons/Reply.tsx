@@ -18,9 +18,7 @@ import type IIconBasic from "../IconBasic.types";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const Reply = ({ size }: IIconBasic): JSX.Element => {
    return (
@@ -31,7 +29,6 @@ const Reply = ({ size }: IIconBasic): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

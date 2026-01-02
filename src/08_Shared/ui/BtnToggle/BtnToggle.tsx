@@ -22,9 +22,7 @@ import "./BtnToggle.styles.css";
 // ########## МОДУЛИ
 import useVibrate from "@shared/hooks/useVibrate";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const BtnToggle = ({ id, isActive, action, children, extraClass }: IBtnToggle): JSX.Element => {
 
@@ -43,7 +41,6 @@ const BtnToggle = ({ id, isActive, action, children, extraClass }: IBtnToggle): 
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

@@ -6,7 +6,6 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
 export default interface ICheckbox {
    flag: boolean;
 };

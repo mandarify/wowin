@@ -1,12 +1,17 @@
 {
    "id": 4,
+   "version": 1,
+   "status": "published",
    "isTop": 1,
    "position": 5,
-   "title": "Посылка",
+   "title": "ПОСЫЛКА",
    "desc": "Тебе пришла крупная посылка! Забирай и открывай!",
-   "link": "/game/case/package",
-   "dtCreate": 1766429532,
-   "style": "tree",
+   "slug": "package",
+   "dtPublication": 1767384760,
+   "dtUpdated": 1767096314,
+   "dtCreated": 1767083635,
+   "dtDeleted": null,
+   "style": "default",
    "price": 9,
    "sale": {
       "percent": -75,
@@ -32,7 +37,7 @@
          "permille": 10,
          "price": 300,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767084110-300",
             "type": "coin",
             "name": "300 WOW",
             "src": "/wowin/test/coins/coin-medium.svg"
@@ -44,19 +49,19 @@
          "permille": 100,
          "price": 100,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767084114-100",
             "type": "coin",
             "name": "100 WOW",
-            "src": "/wowin/test/coins/coin-medium.svg"
+            "src": "/wowin/test/coins/coin-low.svg"
          }
       },
       {
          "id": 2,
          "rarity": "rare",
-         "permille": 500,
+         "permille": 571,
          "price": 50,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767084122-50",
             "type": "coin",
             "name": "50 WOW",
             "src": "/wowin/test/coins/coin-low.svg"
@@ -65,10 +70,10 @@
       {
          "id": 3,
          "rarity": "rare",
-         "permille": 1500,
+         "permille": 1429,
          "price": 20,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767084126-20",
             "type": "coin",
             "name": "20 WOW",
             "src": "/wowin/test/coins/coin-low.svg"
@@ -77,10 +82,10 @@
       {
          "id": 4,
          "rarity": "unique",
-         "permille": 5000,
+         "permille": 6666,
          "price": 10,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767084134-10",
             "type": "coin",
             "name": "10 WOW",
             "src": "/wowin/test/coins/coin-low.svg"
@@ -89,10 +94,10 @@
       {
          "id": 5,
          "rarity": "unique",
-         "permille": 15000,
+         "permille": 13334,
          "price": 5,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767084141-5",
             "type": "coin",
             "name": "5 WOW",
             "src": "/wowin/test/coins/coin-low.svg"
@@ -101,10 +106,10 @@
       {
          "id": 6,
          "rarity": "common",
-         "permille": 20000,
+         "permille": 14161,
          "price": 3,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767084151-3",
             "type": "coin",
             "name": "3 WOW",
             "src": "/wowin/test/coins/coin-low.svg"
@@ -113,10 +118,10 @@
       {
          "id": 7,
          "rarity": "common",
-         "permille": 20000,
+         "permille": 21242,
          "price": 2,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767084157-2",
             "type": "coin",
             "name": "2 WOW",
             "src": "/wowin/test/coins/coin-low.svg"
@@ -125,10 +130,10 @@
       {
          "id": 8,
          "rarity": "common",
-         "permille": 37890,
+         "permille": 42487,
          "price": 1,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767084162-1",
             "type": "coin",
             "name": "1 WOW",
             "src": "/wowin/test/coins/coin-low.svg"

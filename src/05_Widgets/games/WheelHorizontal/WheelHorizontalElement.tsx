@@ -21,9 +21,7 @@ import type { GameCaseItem } from "@shared/types/games/case.types";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const WheelHorizontalElement = forwardRef(({ data }: IWheelHorizontalElement, ref): JSX.Element => {
 
@@ -81,7 +79,6 @@ const WheelHorizontalElement = forwardRef(({ data }: IWheelHorizontalElement, re
       </div>
    );
 });
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

@@ -20,9 +20,7 @@ import "./BadgeLimit.styles.css";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const BadgeLimit = ({ total, purchased, style, extraClass }: IBadgeLimit): JSX.Element => {
    return (
@@ -31,7 +29,6 @@ const BadgeLimit = ({ total, purchased, style, extraClass }: IBadgeLimit): JSX.E
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

@@ -18,9 +18,7 @@ import { useEffect } from "react";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const TelegramProvider = (props: { children: React.ReactNode }): React.ReactNode => {
 
@@ -33,9 +31,17 @@ const TelegramProvider = (props: { children: React.ReactNode }): React.ReactNode
 
       const resize = () => {
          let safeTop = 80;
-         if (tg.platform === "ios") safeTop = tg.safeAreaInset.top + 50;
-         else if (["tdesktop", "web", "weba", "webk", "macos"].includes(tg.platform)) safeTop = 30;
+         let safeBottom = 30;
+         if (tg.platform === "ios") {
+            safeTop = tg.safeAreaInset.top + 50;
+            safeBottom = tg.safeAreaInset.bottom;
+         }
+         else if (["tdesktop", "web", "weba", "webk", "macos"].includes(tg.platform)) {
+            safeTop = 30;
+            safeBottom = 30;
+         }
          document.documentElement.style.setProperty('--tg-safe-top', `${safeTop}px`);
+         document.documentElement.style.setProperty('--tg-safe-bottom', `${safeBottom}px`);
       };
 
       tg.disableVerticalSwipes();
@@ -57,7 +63,6 @@ const TelegramProvider = (props: { children: React.ReactNode }): React.ReactNode
 
    return props.children;
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

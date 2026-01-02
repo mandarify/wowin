@@ -22,7 +22,6 @@ import useBackButton from "@shared/hooks/useBackButton";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-
 const LocationProvider = (props: { children: React.ReactNode }): React.ReactNode => {
 
    useBackButton();
@@ -36,7 +35,6 @@ const LocationProvider = (props: { children: React.ReactNode }): React.ReactNode
 
    return props.children;
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

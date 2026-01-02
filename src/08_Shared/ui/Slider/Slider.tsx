@@ -12,7 +12,7 @@ import React, { useState, useRef, useEffect, useMemo, useCallback } from "react"
 
 // ########## ТИПЫ
 import type ISlider from "./Slider.types";
-import type { TSlideData } from "@shared/types/data.types";
+import type { ESlide } from "@entities/Slides/Slides.types";
 
 // ########## СТИЛИ
 import "./Slider.styles.css";
@@ -23,27 +23,19 @@ import SliderItem from "./SliderItem";
 // ########## МОДУЛИ
 import MoveSlider from "./extra/MoveSlider/MoveSlider";
 import useVibrate from "@shared/hooks/useVibrate";
-
-
-/* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
-
-const SWIPE_THRESHOLD = 40;
-
+import { SLIDER } from "@shared/consts/settings.consts";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const Slider = ({
-
    data,
    onSlideClick,
-   nextSlideMs = 10000,
-   btnMovePercent = 16,
+   nextSlideMs = SLIDER.NEXT_SLIDE_MS,
+   btnMovePercent = SLIDER.BTN_MOVE_PERCENT,
 
 }: ISlider): JSX.Element => {
 
-   const animationMs = 500;
+   const animationMs = SLIDER.ANIMATION_MS;
    const vibrate = useVibrate();
 
    const [index, setIndex] = useState(0);
@@ -57,7 +49,7 @@ const Slider = ({
    const isSwiping = useRef(false);
 
    const moveSlider = useMemo(() => new MoveSlider(data), [data]);
-   const slides = useMemo<TSlideData[]>(() => {
+   const slides = useMemo<ESlide[]>(() => {
       return moveSlider.getSlides(index);
    }, [index, moveSlider]);
 
@@ -81,12 +73,12 @@ const Slider = ({
    };
 
    /* Прокрут слайдера. */
-   const step = useCallback((fun: () => void) => {
+   const step = (fun: () => void) => {
       if (isAnimate && isAnimate.current) return;
       isAnimate.current = true;
       fun();
       pause();
-   }, []);
+   };
 
    /* Автопрокрутка */
    useEffect(() => {
@@ -104,7 +96,7 @@ const Slider = ({
             intervalId.current = null;
          }
       };
-   }, [index, nextSlide, nextSlideMs, step]);
+   }, [index, nextSlide, nextSlideMs]);
 
    /* Клик по слайдеру */
    const handleClick = (e: React.MouseEvent) => {
@@ -168,7 +160,7 @@ const Slider = ({
       swipeStartX.current = null;
       swipeStartY.current = null;
 
-      if (Math.abs(dx) < SWIPE_THRESHOLD) return;
+      if (Math.abs(dx) < SLIDER.SWIPE_THRESHOLD) return;
 
       vibrate.apply("soft");
 
@@ -198,7 +190,6 @@ const Slider = ({
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

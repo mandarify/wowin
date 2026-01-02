@@ -20,9 +20,7 @@ import { TitleMain } from "@shared/ui";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const SettingsPage = (): JSX.Element => {
    return (
@@ -30,7 +28,7 @@ const SettingsPage = (): JSX.Element => {
          <div className="page-settings">
             <TitleMain title="настройки" icon="settings" />
 
-            <pre>V.0.0.28</pre>
+            <pre>V.0.0.30</pre>
 
             {!!Telegram?.WebApp?.initDataUnsafe?.user &&
                <>
@@ -65,7 +63,6 @@ const SettingsPage = (): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

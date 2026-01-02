@@ -22,12 +22,9 @@ import "./WheelGifts.styles.css";
 import WinGift from "./WinGift";
 
 // ########## МОДУЛИ
-
+import { random } from "@shared/funcs/random";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
-
-const random = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const winGifts = (): TWinData[] => {
    return Array.from({ length: 20 }, (_, index) => {
@@ -57,9 +54,7 @@ const winGifts = (): TWinData[] => {
    });
 };
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const WheelGifts = (): JSX.Element => {
 
@@ -89,7 +84,6 @@ const WheelGifts = (): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

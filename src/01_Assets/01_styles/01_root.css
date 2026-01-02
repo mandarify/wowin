@@ -7,6 +7,7 @@
    /* +++++ TELEGRAM +++++ */
 
    --tg-safe-top: 30px;
+   --tg-safe-bottom: 30px;
 
    /* +++++ NORMALIZE +++++ */
 
@@ -287,7 +288,7 @@
 }
 
 
-[data-style="tree"] {
+[data-style="default"] {
    --style-color-1: #3F2E65;
    /* --style-color-1: #B16715; */
    --style-color-2: #2E204E;
@@ -305,7 +306,7 @@
    --style-color-decor: linear-gradient(to right, #585858, #B5B5B5, #585858);
 }
 
-[data-theme="tree"] {}
+[data-theme="default"] {}
 
 
 [data-style="zoom"] {

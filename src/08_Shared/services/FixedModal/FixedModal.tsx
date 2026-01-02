@@ -11,6 +11,7 @@ import React from "react";
 import { createPortal } from "react-dom";
 
 // ########## ТИПЫ
+import type IFixedModal from "./FixedModal.types";
 
 // ########## СТИЛИ
 
@@ -21,9 +22,6 @@ import { createPortal } from "react-dom";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-export interface IFixedModal {
-   children: React.ReactNode;
-};
 
 const FixedModal = ({ children }: IFixedModal): React.ReactNode => {
 

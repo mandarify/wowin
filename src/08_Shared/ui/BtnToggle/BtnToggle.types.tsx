@@ -6,7 +6,6 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
 // ########## STANDART
 import React from "react";
 
@@ -18,9 +17,7 @@ import React from "react";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 export default interface IBtnToggle {
    id: number | string;

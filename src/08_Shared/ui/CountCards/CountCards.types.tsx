@@ -6,7 +6,6 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
 // ########## STANDART
 
 // ########## ТИПЫ
@@ -18,9 +17,7 @@ import type { GameCaseItemRarity } from "@shared/types/games/case.types"
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 export default interface ICountCards {
    rarity: GameCaseItemRarity;

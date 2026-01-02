@@ -24,9 +24,7 @@ import "./ImgBasic.styles.css";
 // ########## РЕСУРСЫ
 import iconImg from "@assets/04_errors/img.svg";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const ImgBasic = ({ src, alt, extraClass }: IImgBasic): JSX.Element => {
 
@@ -43,7 +41,6 @@ const ImgBasic = ({ src, alt, extraClass }: IImgBasic): JSX.Element => {
       <img ref={imgRef} key={src} className={`img-basic _unselect ${extraClass ?? ''}`.trim()} src={src} alt={alt} onError={loadedError} />
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

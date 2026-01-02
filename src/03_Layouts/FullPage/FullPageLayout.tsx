@@ -19,9 +19,7 @@ import { Outlet } from "react-router-dom";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const FullPageLayout = (): JSX.Element => {
    return (
@@ -42,7 +40,6 @@ const FullPageLayout = (): JSX.Element => {
       </>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

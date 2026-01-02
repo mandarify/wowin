@@ -20,9 +20,7 @@ import MenuMain from "./views/MenuMain/MenuMain";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const Menu = ({ type }: IMenu): JSX.Element => {
    return (
@@ -40,7 +38,6 @@ const Menu = ({ type }: IMenu): JSX.Element => {
       </menu>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

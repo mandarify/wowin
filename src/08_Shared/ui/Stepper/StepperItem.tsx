@@ -20,9 +20,7 @@ import type { IStepperItem } from "./Stepper.types";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const StepperItem = ({ id, content, isActive, delay }: IStepperItem): JSX.Element => {
 
@@ -53,7 +51,6 @@ const StepperItem = ({ id, content, isActive, delay }: IStepperItem): JSX.Elemen
       <div ref={itemRef} className={`stepper-item _unselect`} data-id={id}>{content}</div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

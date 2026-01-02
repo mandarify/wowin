@@ -24,9 +24,7 @@ import Price from "../Price/Price";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const CardCaseItem = ({ data }: ICardCaseItem): JSX.Element => {
 
@@ -62,7 +60,6 @@ const CardCaseItem = ({ data }: ICardCaseItem): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

@@ -6,7 +6,6 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
 // ########## STANDART
 import type { JSX } from "react";
 
@@ -19,9 +18,7 @@ import type IconDouble from "../IconDouble.types";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const Swords = ({ size }: IconDouble): JSX.Element => {
    return (
@@ -42,7 +39,6 @@ const Swords = ({ size }: IconDouble): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

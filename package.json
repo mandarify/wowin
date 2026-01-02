@@ -12,9 +12,11 @@
       "deploy": "gh-pages -d dist"
    },
    "dependencies": {
+      "@reduxjs/toolkit": "^2.11.2",
       "lottie-web": "^5.13.0",
       "react": "^19.2.0",
       "react-dom": "^19.2.0",
+      "react-redux": "^9.2.0",
       "react-router-dom": "^7.10.1",
       "react-virtuoso": "^4.17.0",
       "telegram-webapps": "^9.1.0"

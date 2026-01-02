@@ -21,9 +21,7 @@ import { BtnGame, ImgBasic } from "@shared/ui";
 // ########## МОДУЛИ
 import useVibrate from "@shared/hooks/useVibrate";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const Resource = ({ value, src, action }: IResource): JSX.Element => {
 
@@ -52,7 +50,6 @@ const Resource = ({ value, src, action }: IResource): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

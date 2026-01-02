@@ -25,9 +25,7 @@ import TextGame from "../TextGame/TextGame";
 import wowcoin from "@assets/02_images/wincoin.svg";
 import casecoin from "@assets/02_images/casecoin.svg";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const Price = ({ value, size, justify, resource, strike, animation, extraClass }: IPrice): JSX.Element => {
    return (
@@ -40,7 +38,6 @@ const Price = ({ value, size, justify, resource, strike, animation, extraClass }
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

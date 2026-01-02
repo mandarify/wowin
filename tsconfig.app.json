@@ -54,6 +54,9 @@
          "@shared/*": [
             "08_Shared/*"
          ],
+         "@store/*": [
+            "09_Store/*"
+         ],
          "@styles/*": [
             "01_Assets/01_styles/*"
          ],

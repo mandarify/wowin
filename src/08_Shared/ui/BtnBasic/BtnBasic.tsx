@@ -21,9 +21,7 @@ import "./BtnBasic.styles.css";
 // ########## МОДУЛИ
 import useVibrate from "@shared/hooks/useVibrate";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const BtnBasic = ({ id, title, icon, isActive, extraClass, action }: IBtnBasic): JSX.Element => {
 
@@ -41,7 +39,6 @@ const BtnBasic = ({ id, title, icon, isActive, extraClass, action }: IBtnBasic):
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

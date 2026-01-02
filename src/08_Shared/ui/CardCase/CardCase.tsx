@@ -24,9 +24,7 @@ import CardCaseItem from "../CardCaseItem/CardCaseItem";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const CardCase = ({ game }: ICardCase): JSX.Element => {
    return (
@@ -57,7 +55,6 @@ const CardCase = ({ game }: ICardCase): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

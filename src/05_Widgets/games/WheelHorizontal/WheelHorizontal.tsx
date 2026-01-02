@@ -25,9 +25,7 @@ import WheelHorizontalElement from "./WheelHorizontalElement";
 // ########## МОДУЛИ
 import useVibrate from "@shared/hooks/useVibrate";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const getStartState = (): IWheelHorizontalState => ({
    refId: null,
@@ -37,9 +35,7 @@ const getStartState = (): IWheelHorizontalState => ({
    isPlay: false,
 });
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const WheelHorizontal = forwardRef(({ logic }: IWheelHorizontal, ref): JSX.Element => {
 
@@ -176,7 +172,7 @@ const WheelHorizontal = forwardRef(({ logic }: IWheelHorizontal, ref): JSX.Eleme
       return () => {
          if (autoRafId.current) cancelAnimationFrame(autoRafId.current);
       }
-   }, []);
+   });
 
    /* Запуск движения к победному элементу. */
    const play = (winId: number) => {
@@ -220,7 +216,6 @@ const WheelHorizontal = forwardRef(({ logic }: IWheelHorizontal, ref): JSX.Eleme
       </div>
    );
 });
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

@@ -24,9 +24,7 @@ import ImgBasic from "../ImgBasic/ImgBasic";
 // ########## МОДУЛИ
 import useVibrate from "@shared/hooks/useVibrate";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const AvatarMini = ({ src, path }: IAvatarMini): JSX.Element => {
 
@@ -42,7 +40,6 @@ const AvatarMini = ({ src, path }: IAvatarMini): JSX.Element => {
       </NavLink>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

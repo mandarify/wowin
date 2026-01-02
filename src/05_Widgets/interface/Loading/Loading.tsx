@@ -22,9 +22,7 @@ import "./Loading.styles.css";
 // ########## МОДУЛИ
 import useVibrate from "@shared/hooks/useVibrate";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const Loading = ({ status, delay, extraClass }: ILoading): JSX.Element => {
 
@@ -85,7 +83,6 @@ const Loading = ({ status, delay, extraClass }: ILoading): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

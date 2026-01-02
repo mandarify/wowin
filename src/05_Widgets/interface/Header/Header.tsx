@@ -21,9 +21,7 @@ import HeaderBack from "./views/HeaderBack/HeaderBack";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const Header = ({ type }: IHeader): JSX.Element => {
 
@@ -43,7 +41,6 @@ const Header = ({ type }: IHeader): JSX.Element => {
       </header>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

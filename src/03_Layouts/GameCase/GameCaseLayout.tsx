@@ -19,15 +19,13 @@ import { Header, Menu } from "@widgets/interface";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const GameCaseLayout = (): JSX.Element => {
    return (
       <>
 
-         <Header type="back" />
+         <Header type="empty" />
 
          <div className="app">
             <div className="app-container">
@@ -44,7 +42,6 @@ const GameCaseLayout = (): JSX.Element => {
       </>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

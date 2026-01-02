@@ -23,9 +23,7 @@ import "./BtnGameType.styles.css";
 import { GameIcons } from "@shared/consts/data.consts";
 import useVibrate from "@shared/hooks/useVibrate";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const BtnGameType = ({ type, action }: IBtnGameType): JSX.Element => {
 
@@ -42,7 +40,6 @@ const BtnGameType = ({ type, action }: IBtnGameType): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

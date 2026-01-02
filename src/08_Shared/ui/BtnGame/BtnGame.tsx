@@ -22,9 +22,7 @@ import IconBasic from "../IconBasic";
 // ########## МОДУЛИ
 import useVibrate from "@shared/hooks/useVibrate";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const BtnGame = ({ mode, size, action }: IBtnGame): JSX.Element => {
 
@@ -46,7 +44,6 @@ const BtnGame = ({ mode, size, action }: IBtnGame): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

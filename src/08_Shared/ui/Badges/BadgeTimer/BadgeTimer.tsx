@@ -20,32 +20,9 @@ import "./BadgeTimer.styles.css";
 // ########## КОМПОНЕНТЫ
 
 // ########## МОДУЛИ
-import { getRemainingSeconds, toHumanTime } from "@shared/funcs/time";
-
-
-/* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
-const getUpdateDelay = (sec: number): number => {
-   if (sec <= 0) return 0;
-
-   // секунды
-   if (sec < 60) {
-      return 1000;
-   }
-
-   // минуты (< 59 минут)
-   if (sec < 60 * 60) {
-      const secondsLeftInMinute = sec % 60;
-      return (secondsLeftInMinute || 60) * 1000;
-   }
-
-   // часы (>= 1 часа)
-   const minutesLeftInHour = Math.floor((sec % 3600) / 60);
-   return (minutesLeftInHour || 60) * 60_000;
-};
+import { getRemainingSeconds, toHumanTime, getUpdateDelay } from "@shared/funcs/time";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const BadgeTimer = ({ dtStart, duration, style, extraClass }: IBadgeTimer): JSX.Element => {
 
@@ -88,7 +65,6 @@ const BadgeTimer = ({ dtStart, duration, style, extraClass }: IBadgeTimer): JSX.
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

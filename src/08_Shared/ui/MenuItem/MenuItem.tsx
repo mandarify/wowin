@@ -25,7 +25,6 @@ import useVibrate from "@shared/hooks/useVibrate";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-
 const MenuItem = ({ title, path, children, position }: IMenuItem): JSX.Element => {
 
    const vibrate = useVibrate();
@@ -42,7 +41,6 @@ const MenuItem = ({ title, path, children, position }: IMenuItem): JSX.Element =
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

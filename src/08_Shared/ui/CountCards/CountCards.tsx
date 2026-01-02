@@ -19,9 +19,7 @@ import "./CountCards.styles.css";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const CountCards = ({ rarity, count }: ICountCards): JSX.Element => {
    return (
@@ -31,7 +29,6 @@ const CountCards = ({ rarity, count }: ICountCards): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

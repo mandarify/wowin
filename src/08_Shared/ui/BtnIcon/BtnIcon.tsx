@@ -25,7 +25,6 @@ import useVibrate from "@shared/hooks/useVibrate";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-
 const BtnIcon = ({ path, size, isNew, children }: IBtnIcon): JSX.Element => {
 
    const vibrate = useVibrate();
@@ -38,7 +37,6 @@ const BtnIcon = ({ path, size, isNew, children }: IBtnIcon): JSX.Element => {
       </NavLink>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

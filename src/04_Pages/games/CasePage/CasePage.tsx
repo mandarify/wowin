@@ -27,19 +27,16 @@ import { Popup, Stepper, BtnSimple, ImgProgress, ImgBasic, TextGame, CardCase, B
 import { WheelHorizontal } from "@widgets/games";
 
 // ########## МОДУЛИ
-import { useFixedModal } from "@shared/contexts/FixedModalContext/FixedModalContext";
+import CaseLogic from "@shared/modules/CaseLogic/CaseLogic";
 import useVibrate from "@shared/hooks/useVibrate";
 import useBodyTheme from "@shared/hooks/useBodyTheme";
-
-import CaseLogic from "@shared/modules/CaseLogic/CaseLogic";
+import { useFixedModal } from "@shared/contexts/FixedModalContext/FixedModal.hook";
 
 // ########## РЕСУРСЫ
 import wowcoin from "@assets/02_images/wincoin.svg";
 import casecoin from "@assets/02_images/casecoin.svg";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 // FETCH GET CASE DATA
 const getCaseData = async (name: string): Promise<GameCase | null> => {
@@ -71,9 +68,7 @@ const getCasesStats = (): TCasesStats => {
    };
 };
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const caseLogicParams: CaseLogicParams = {
    sizes: {
@@ -88,12 +83,9 @@ const caseLogicParams: CaseLogicParams = {
    }
 };
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-
 const CasePage = ({ name }: ICasePage): JSX.Element => {
-
 
    const { open, close } = useFixedModal();
    const vibrate = useVibrate();
@@ -241,8 +233,8 @@ const CasePage = ({ name }: ICasePage): JSX.Element => {
                         <div className="case-center-line case-center-line-top" />
                         <div className="case-center-line case-center-line-bottom" />
 
-                        <div className="case-wheel-border case-wheel-border-top">{data.style !== "tree" && <WheelLineCrystal link={data.style} />}</div>
-                        <div className="case-wheel-border case-wheel-border-bottom">{data.style !== "tree" && <WheelLineCrystal link={data.style} />}</div>
+                        <div className="case-wheel-border case-wheel-border-top">{data.style !== "default" && <WheelLineCrystal link={data.style} />}</div>
+                        <div className="case-wheel-border case-wheel-border-bottom">{data.style !== "default" && <WheelLineCrystal link={data.style} />}</div>
 
                      </div>
                   </div>

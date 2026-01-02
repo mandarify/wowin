@@ -6,11 +6,10 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
 // ########## STANDART
 
 // ########## ТИПЫ
-import type { TSlideData } from "@shared/types/data.types";
+import type { ESlide } from "@entities/Slides/Slides.types";
 
 // ########## СТИЛИ
 
@@ -18,15 +17,13 @@ import type { TSlideData } from "@shared/types/data.types";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 /**
  *  Данные web слайда.
  */
 export type TSlide = {
-   data: TSlideData,
+   data: ESlide,
    ref: any,
 };
 
@@ -34,7 +31,7 @@ export type TSlide = {
  * Интерфейс SliderItem.
  */
 export interface ISliderItem {
-   slide: TSlideData;
+   slide: ESlide;
    isActive: boolean;
    offset: number;
 };
@@ -47,8 +44,8 @@ export interface ISliderItem {
  * - `btnMovePercent` : процент от длины всего слайдера который будет занимать каждая кнопка (справа и слева) для перемещения слайдов.
  */
 export default interface ISlider {
-   data: TSlideData[];
-   onSlideClick: (slide: TSlideData) => void;
+   data: ESlide[];
+   onSlideClick: (slide: ESlide) => void;
    nextSlideMs?: number;
    btnMovePercent?: number;
 };

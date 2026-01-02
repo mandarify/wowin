@@ -13,6 +13,7 @@ import { useState, useEffect, useRef, forwardRef, useImperativeHandle } from "re
 
 // ########## ТИПЫ
 import type IBtnPlay from "./BtnPlay.types";
+import type { BtnPlayLabel } from "./BtnPlay.types";
 
 // ########## СТИЛИ
 import "./BtnPlay.styles.css";
@@ -22,17 +23,7 @@ import "./BtnPlay.styles.css";
 // ########## МОДУЛИ
 import useVibrate from "@shared/hooks/useVibrate";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
-
-export type BtnPlayLabelPosition = "top" | "center" | "bottom";
-
-export type BtnPlayLabel = {
-   id: string;
-   element: React.ReactNode;
-   position: BtnPlayLabelPosition;
-};
 
 const BtnPlay = forwardRef(({ delay, states, action }: IBtnPlay, ref): JSX.Element => {
 
@@ -127,7 +118,6 @@ const BtnPlay = forwardRef(({ delay, states, action }: IBtnPlay, ref): JSX.Eleme
       </div>
    );
 });
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

@@ -21,9 +21,7 @@ import "./ImgProgress.styles.css";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const ImgProgress = ({ srcs, alt, blur, extraClass }: IImgProgress): JSX.Element => {
 
@@ -78,7 +76,6 @@ const ImgProgress = ({ srcs, alt, blur, extraClass }: IImgProgress): JSX.Element
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

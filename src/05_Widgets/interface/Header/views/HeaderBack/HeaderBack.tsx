@@ -7,6 +7,10 @@
 */
 
 // ########## STANDART
+import { useSelector } from "react-redux";
+import { getCurrentLanguage } from "@entities/Language/Language.selectors";
+
+// ########## STANDART
 import type { JSX } from "react";
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
@@ -22,25 +26,23 @@ import { BtnSimple } from "@shared/ui";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const HeaderBack = (): JSX.Element => {
 
    const navigate = useNavigate();
+   const language = useSelector(getCurrentLanguage)!;
 
    const back = useCallback(() => {
-      navigate(-1);
+      navigate("/");
    }, [navigate]);
 
    return (
       <div className="header-content header-back">
-         <BtnSimple title="назад" icon="reply" isBlock={false} action={back} />
+         <BtnSimple title={language.labels["header_back_button"]} icon="reply" isBlock={false} action={back} />
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

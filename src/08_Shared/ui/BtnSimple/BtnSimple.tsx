@@ -24,15 +24,15 @@ import IconBasic from "../IconBasic";
 // ########## МОДУЛИ
 import useVibrate from "@shared/hooks/useVibrate";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const icons = {
    "reply": () => <IconBasic.Reply size={14} />,
    "info": () => <IconBasic.Info size={14} />,
    "palette": () => <IconBasic.Palette size={14} />,
 }
+
+/* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
 const BtnSimple = ({ title, icon, isBlock, action, extraClass }: IBtnSimple): JSX.Element => {
 
@@ -53,7 +53,6 @@ const BtnSimple = ({ title, icon, isBlock, action, extraClass }: IBtnSimple): JS
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

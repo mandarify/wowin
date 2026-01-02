@@ -18,9 +18,7 @@ import React from "react";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 export type ILoading = {
    status: "close" | "open";

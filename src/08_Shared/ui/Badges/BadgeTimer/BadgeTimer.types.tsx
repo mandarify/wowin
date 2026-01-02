@@ -6,7 +6,6 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
 export default interface IBadgeTimer {
    dtStart: number,
    duration: number,

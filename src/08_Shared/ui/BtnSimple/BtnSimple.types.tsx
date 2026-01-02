@@ -6,7 +6,6 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
 export default interface IBtnSimple {
    title: string;
    icon?: "reply" | "info" | "palette";

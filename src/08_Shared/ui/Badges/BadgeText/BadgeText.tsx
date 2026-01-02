@@ -20,9 +20,7 @@ import "./BadgeText.styles.css";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const BadgeText = ({ text, style, extraClass }: IBadgeText): JSX.Element => {
    return (
@@ -31,7 +29,6 @@ const BadgeText = ({ text, style, extraClass }: IBadgeText): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

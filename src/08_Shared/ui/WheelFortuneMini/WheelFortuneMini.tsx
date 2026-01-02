@@ -23,9 +23,7 @@ import "./WheelFortuneMini.styles.css";
 import useVibrate from "@shared/hooks/useVibrate";
 import { toWebTimeFormat } from "@shared/funcs/time";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const WheelFortuneMini = (): JSX.Element => {
 
@@ -94,7 +92,6 @@ const WheelFortuneMini = (): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

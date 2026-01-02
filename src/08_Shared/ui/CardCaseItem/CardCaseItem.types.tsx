@@ -18,9 +18,7 @@ import type { GameCaseItem } from "@shared/types/games/case.types";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 export default interface ICardCaseItem {
    data: GameCaseItem;

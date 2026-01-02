@@ -1,16 +1,21 @@
 {
    "id": 2,
+   "version": 1,
+   "status": "published",
    "isTop": null,
    "position": 4,
-   "title": "Фортуна",
+   "title": "ФОРТУНА",
    "desc": "Фортуна мало обещает, но может очень дорого удивить.",
-   "link": "/game/case/fortune",
-   "dtCreate": 1765368000,
-   "style": "tree",
-   "price": 169,
+   "slug": "fortune",
+   "dtPublication": 1767384760,
+   "dtUpdated": 1767384817,
+   "dtCreated": 1767025167,
+   "dtDeleted": null,
+   "style": "default",
+   "price": 249,
    "sale": {
       "percent": -50,
-      "oldPrice": 350
+      "oldPrice": 500
    },
    "limit": null,
    "timer": null,
@@ -19,7 +24,7 @@
       "epic": 1,
       "rare": 2,
       "unique": 5,
-      "common": 6
+      "common": 5
    },
    "srcs": {
       "low": "/wowin/test/cases/case-preview.png",
@@ -30,179 +35,167 @@
          "id": 0,
          "rarity": "legendary",
          "permille": 10,
-         "price": 4340,
+         "price": 7056,
          "content": {
             "id": "5933793770951673155",
             "type": "gift",
             "name": "Neko Helmet",
-            "src": "/wowin/test/models/neko-helmet-512.webp"
+            "src": "/wowin/test/models/5933793770951673155-512.webp"
          }
       },
       {
          "id": 1,
          "rarity": "epic",
          "permille": 100,
-         "price": 1240,
+         "price": 2154,
          "content": {
             "id": "6012435906336654262",
             "type": "gift",
             "name": "Snoop Cigar",
-            "src": "/wowin/test/models/snoop-cigar-512.webp"
+            "src": "/wowin/test/models/6012435906336654262-512.webp"
          }
       },
       {
          "id": 2,
          "rarity": "rare",
          "permille": 1000,
-         "price": 775,
+         "price": 1450,
          "content": {
             "id": "5825480571261813595",
             "type": "gift",
             "name": "Evil Eye",
-            "src": "/wowin/test/models/evil-eye-512.webp"
+            "src": "/wowin/test/models/5825480571261813595-512.webp"
          }
       },
       {
          "id": 3,
          "rarity": "rare",
          "permille": 1000,
-         "price": 775,
+         "price": 1450,
          "content": {
             "id": "5882252952218894938",
             "type": "gift",
             "name": "Berry Box",
-            "src": "/wowin/test/models/berry-box-512.webp"
+            "src": "/wowin/test/models/5882252952218894938-512.webp"
          }
       },
       {
          "id": 4,
          "rarity": "unique",
-         "permille": 4000,
-         "price": 310,
+         "permille": 3429,
+         "price": 600,
          "content": {
-            "id": "5170594532177215681",
+            "id": "6006064678835323371",
             "type": "gift",
-            "name": "Lol Pop",
-            "src": "/wowin/test/models/lol-pop-512.webp"
+            "name": "Happy Brownie",
+            "src": "/wowin/test/models/6006064678835323371-512.webp"
          }
       },
       {
          "id": 5,
          "rarity": "unique",
-         "permille": 4000,
-         "price": 310,
+         "permille": 3441,
+         "price": 598,
          "content": {
             "id": "5782988952268964995",
             "type": "gift",
             "name": "Desk Calendar",
-            "src": "/wowin/test/models/desk-calendar-512.webp"
+            "src": "/wowin/test/models/5782988952268964995-512.webp"
          }
       },
       {
          "id": 6,
          "rarity": "unique",
-         "permille": 4000,
-         "price": 310,
+         "permille": 4115,
+         "price": 500,
          "content": {
-            "id": "6005564615793050414",
+            "id": "5170594532177215681",
             "type": "gift",
-            "name": "Instant Ramen",
-            "src": "/wowin/test/models/instant-ramen-512.webp"
+            "name": "Lol Pop",
+            "src": "/wowin/test/models/5170594532177215681-512.webp"
          }
       },
       {
          "id": 7,
          "rarity": "unique",
-         "permille": 4000,
-         "price": 310,
+         "permille": 4378,
+         "price": 470,
          "content": {
-            "id": "6006064678835323371",
+            "id": "6005564615793050414",
             "type": "gift",
-            "name": "Happy Brownie",
-            "src": "/wowin/test/models/happy-brownie-512.webp"
+            "name": "Instant Ramen",
+            "src": "/wowin/test/models/6005564615793050414-512.webp"
          }
       },
       {
          "id": 8,
          "rarity": "unique",
-         "permille": 4000,
-         "price": 310,
+         "permille": 4637,
+         "price": 444,
          "content": {
             "id": "6023679164349940429",
             "type": "gift",
             "name": "Snake Box",
-            "src": "/wowin/test/models/snake-box-512.webp"
+            "src": "/wowin/test/models/6023679164349940429-512.webp"
          }
       },
       {
          "id": 9,
          "rarity": "common",
-         "permille": 5000,
+         "permille": 5192,
          "price": 100,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767042603-100",
             "type": "coin",
             "name": "100 WOW",
-            "src": "/wowin/test/coins/coin-medium.svg"
+            "src": "/wowin/test/coins/coin-low.svg"
          }
       },
       {
          "id": 10,
          "rarity": "common",
-         "permille": 8000,
-         "price": 50,
+         "permille": 6923,
+         "price": 75,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767384799-75",
             "type": "coin",
-            "name": "50 WOW",
+            "name": "75 WOW",
             "src": "/wowin/test/coins/coin-low.svg"
          }
       },
       {
          "id": 11,
          "rarity": "common",
-         "permille": 10000,
-         "price": 25,
+         "permille": 10385,
+         "price": 50,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767042609-50",
             "type": "coin",
-            "name": "25 WOW",
+            "name": "50 WOW",
             "src": "/wowin/test/coins/coin-low.svg"
          }
       },
       {
          "id": 12,
          "rarity": "common",
-         "permille": 12000,
-         "price": 10,
+         "permille": 20770,
+         "price": 25,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767042858-25",
             "type": "coin",
-            "name": "10 WOW",
+            "name": "25 WOW",
             "src": "/wowin/test/coins/coin-low.svg"
          }
       },
       {
          "id": 13,
          "rarity": "common",
-         "permille": 16000,
-         "price": 5,
+         "permille": 34620,
+         "price": 15,
          "content": {
-            "id": null,
+            "id": "wowcoin-1767384809-15",
             "type": "coin",
-            "name": "5 WOW",
-            "src": "/wowin/test/coins/coin-low.svg"
-         }
-      },
-      {
-         "id": 14,
-         "rarity": "common",
-         "permille": 27890,
-         "price": 3,
-         "content": {
-            "id": null,
-            "type": "coin",
-            "name": "3 WOW",
+            "name": "15 WOW",
             "src": "/wowin/test/coins/coin-low.svg"
          }
       }

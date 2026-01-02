@@ -21,9 +21,7 @@ import "./Screen.styles.css";
 // ########## МОДУЛИ
 import useVibrate from "@shared/hooks/useVibrate";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const Screen = ({ closeAction, children }: IScreen): JSX.Element => {
 
@@ -75,7 +73,6 @@ const Screen = ({ closeAction, children }: IScreen): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

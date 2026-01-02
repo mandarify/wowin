@@ -19,9 +19,7 @@ import "./TitleMain.styles.css";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const TitleMain = ({ title, icon }: ITitleMain): JSX.Element => {
    return (
@@ -31,7 +29,6 @@ const TitleMain = ({ title, icon }: ITitleMain): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

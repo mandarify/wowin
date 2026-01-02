@@ -21,9 +21,7 @@ import StepperItem from "./StepperItem";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const createItems = (total: number, current: number, isInit?: boolean): IStepperItem[] => {
    return Array.from({ length: total }, (_, index) => {
@@ -37,9 +35,7 @@ const createItems = (total: number, current: number, isInit?: boolean): IStepper
    });
 };
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const Stepper = ({ total, current, isInit, delay }: IStepper) => {
 
@@ -92,7 +88,6 @@ const Stepper = ({ total, current, isInit, delay }: IStepper) => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

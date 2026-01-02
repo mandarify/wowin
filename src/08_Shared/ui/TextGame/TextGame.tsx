@@ -20,9 +20,7 @@ import "./TextGame.styles.css";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const TextGame = ({ type, content, gradient, extraClass }: ITextGame): JSX.Element => {
    return (
@@ -32,7 +30,6 @@ const TextGame = ({ type, content, gradient, extraClass }: ITextGame): JSX.Eleme
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

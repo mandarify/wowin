@@ -25,9 +25,7 @@ import { AvatarMini, BtnIcon, Resource } from "@shared/ui";
 // ########## РЕСУРСЫ
 import wowcoin from "@images/wincoin.svg";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const HeaderMain = (): JSX.Element => {
 
@@ -56,7 +54,6 @@ const HeaderMain = (): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

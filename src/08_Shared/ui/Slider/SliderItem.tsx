@@ -19,9 +19,7 @@ import ImgProgress from "../ImgProgress/ImgProgress";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const SliderItem = ({ slide, isActive, offset }: ISliderItem): JSX.Element => {
    return (
@@ -32,7 +30,6 @@ const SliderItem = ({ slide, isActive, offset }: ISliderItem): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

@@ -24,9 +24,7 @@ import Input from "../Input";
 // ########## МОДУЛИ
 import useVibrate from "@shared/hooks/useVibrate";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const Popup = ({ title, closeAction, children, style, button }: IPopup): JSX.Element => {
 
@@ -79,7 +77,6 @@ const Popup = ({ title, closeAction, children, style, button }: IPopup): JSX.Ele
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 

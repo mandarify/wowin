@@ -23,9 +23,7 @@ import ImgBasic from "../ImgBasic/ImgBasic";
 import useVibrate from "@shared/hooks/useVibrate";
 import { GameIcons } from "@shared/consts/data.consts";
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 const WinGift = ({ data }: IWinGift): JSX.Element => {
 
@@ -49,7 +47,6 @@ const WinGift = ({ data }: IWinGift): JSX.Element => {
       </div>
    );
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
