@@ -1,0 +1,17 @@
+{
+   "lan": "en",
+   "labels": {
+      "menu_main_profile": "profile",
+      "menu_main_inventory": "box",
+      "menu_main_game": "home",
+      "menu_main_shop": "shop",
+      "menu_main_menu": "menu",
+      "header_back_button": "home",
+      "home_page_title": "games",
+      "game_categories_top": "TOP",
+      "game_categories_case": "Cases",
+      "game_categories_duel": "Duels",
+      "game_categories_pvp": "PvP",
+      "game_categories_solo": "Solo"
+   }
+}

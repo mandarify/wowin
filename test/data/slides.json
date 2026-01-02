@@ -1,0 +1,47 @@
+[
+   {
+      "id": 1,
+      "srcs": {
+         "low": "/wowin/test/actions/news-5-low.jpg",
+         "high": "/wowin/test/actions/news-5.jpg"
+      },
+      "title": "Case Package.",
+      "link": "/game/case/package"
+   },
+   {
+      "id": 2,
+      "srcs": {
+         "low": "/wowin/test/actions/news-1-low.jpg",
+         "high": "/wowin/test/actions/news-1.jpg"
+      },
+      "title": "Case Glow.",
+      "link": "/game/case/glow"
+   },
+   {
+      "id": 3,
+      "srcs": {
+         "low": "/wowin/test/actions/news-2-low.jpg",
+         "high": "/wowin/test/actions/news-2.jpg"
+      },
+      "title": "Case Iceblock.",
+      "link": "/game/case/iceblock"
+   },
+   {
+      "id": 4,
+      "srcs": {
+         "low": "/wowin/test/actions/news-3-low.jpg",
+         "high": "/wowin/test/actions/news-3.jpg"
+      },
+      "title": "Case Fortune.",
+      "link": "/game/case/fortune"
+   },
+   {
+      "id": 5,
+      "srcs": {
+         "low": "/wowin/test/actions/news-4-low.jpg",
+         "high": "/wowin/test/actions/news-5.jpg"
+      },
+      "title": "Case Swag.",
+      "link": "/game/case/swag"
+   }
+]
