@@ -10,7 +10,7 @@
 // ########## STANDART
 
 // ########## ТИПЫ
-import type { TSlideData } from "@shared/types/data.types";
+import type { ESlide } from "@entities/Slides/Slides.types";
 
 // ########## СТИЛИ
 
@@ -27,6 +27,6 @@ import type { TSlideData } from "@shared/types/data.types";
  * - `getSlides`     : Получить набор из 3-х слайдов вокруг индекса (index - 1, index, index + 1).
  */
 export default interface IMoveSlider {
-   getSlide: (index: number) => TSlideData;
-   getSlides: (index: number) => TSlideData[];
+   getSlide: (index: number) => ESlide;
+   getSlides: (index: number) => ESlide[];
 };

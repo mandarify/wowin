@@ -37,11 +37,17 @@ const winGifts = (): TWinData[] => {
          },
          game: {
             id: 0,
+            version: 1,
+            status: "published",
             isTop: 1,
             position: index + 1,
             title: "Сияние",
             desc: "В сиянии звезд рождаются мечты. Они манят того, кто осмелится взглянуть вверх и дотронуться до небес.",
-            link: "/game/case-fortune",
+            slug: "fortune",
+            dtPublication: 1,
+            dtCreated: 1,
+            dtUpdated: 1,
+            dtDeleted: 1,
          },
          type: ["case", "duel", "pvp", "solo"][random(0, 3)] as GameType,
          content: {

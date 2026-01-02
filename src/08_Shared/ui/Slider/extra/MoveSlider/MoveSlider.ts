@@ -7,12 +7,11 @@
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
 
-
 // ########## STANDART
 
 // ########## ТИПЫ
 import type IMoveSlider from "./MoveSlider.types";
-import type { TSlideData } from "@shared/types/data.types";
+import type { ESlide } from "@entities/Slides/Slides.types";
 
 // ########## СТИЛИ
 
@@ -20,16 +19,14 @@ import type { TSlideData } from "@shared/types/data.types";
 
 // ########## МОДУЛИ
 
-
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 
 class MoveSlider implements IMoveSlider {
 
-   private slides: TSlideData[];
+   private slides: ESlide[];
    private length: number;
 
-   constructor(slides: TSlideData[]) {
+   constructor(slides: ESlide[]) {
       this.slides = slides;
       this.length = slides.length;
    }
@@ -41,7 +38,7 @@ class MoveSlider implements IMoveSlider {
     * @param index индекс
     * @returns TSlideData
     */
-   getSlide = (index: number): TSlideData => {
+   getSlide = (index: number): ESlide => {
       return this.slides[index] ? this.slides[index] : (index === this.length ? this.slides[0] : this.slides[this.length - 1]);
    };
 
@@ -50,7 +47,7 @@ class MoveSlider implements IMoveSlider {
     * @param index индекс.
     * @returns TSlideData[3].
     */
-   getSlides = (index: number): TSlideData[] => {
+   getSlides = (index: number): ESlide[] => {
       if (this.length <= 1) return this.slides;
       return [
          this.getSlide(index - 1),
@@ -60,7 +57,6 @@ class MoveSlider implements IMoveSlider {
    };
 
 };
-
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
