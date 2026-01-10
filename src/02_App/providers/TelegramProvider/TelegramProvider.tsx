@@ -34,7 +34,7 @@ const TelegramProvider = (props: { children: React.ReactNode }): React.ReactNode
          let safeBottom = 30;
          if (tg.platform === "ios") {
             safeTop = tg.safeAreaInset.top + 50;
-            safeBottom = tg.safeAreaInset.bottom;
+            safeBottom = tg.safeAreaInset.bottom + 10;
          }
          else if (["tdesktop", "web", "weba", "webk", "macos"].includes(tg.platform)) {
             safeTop = 30;

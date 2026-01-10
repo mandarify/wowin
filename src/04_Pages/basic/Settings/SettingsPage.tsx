@@ -28,7 +28,7 @@ const SettingsPage = (): JSX.Element => {
          <div className="page-settings">
             <TitleMain title="настройки" icon="settings" />
 
-            <pre>V.0.0.30</pre>
+            <pre>V.0.0.38</pre>
 
             {!!Telegram?.WebApp?.initDataUnsafe?.user &&
                <>

@@ -30,10 +30,13 @@ const AppRoutes = (): JSX.Element => {
    return (
       <Routes location={location} key={location.pathname}>
 
-         <Route element={<Layouts.Page />}>
+         <Route element={<Layouts.Profile />}>
 
             <Route path="/profile">
                <Route index element={<Pages.basic.Profile />} />
+               <Route path="wallet" element={<Pages.basic.ProfileWallet />} />
+               <Route path="friends" element={<Pages.basic.ProfileFriends />} />
+               <Route path="tasks" element={<Pages.basic.ProfileTasks />} />
             </Route>
 
          </Route>

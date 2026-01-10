@@ -14,8 +14,8 @@ import { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import type ICasePage from "./CasePage.types";
 import type { GameResources } from "@shared/types/games.types";
 import type { GameCase } from "@shared/types/games/case.types";
-import type { CaseLogicParams } from "@shared/modules/CaseLogic/CaseLogic.types";
 import type { WheelHorizontalHandler } from "@widgets/games/WheelHorizontal/WheelHorizontal.types";
+import type { IBtnPlayHandler } from "@shared/ui/BtnPlay/BtnPlay.types";
 
 // ########## СТИЛИ
 import "./CasePage.styles.css";
@@ -31,6 +31,7 @@ import CaseLogic from "@shared/modules/CaseLogic/CaseLogic";
 import useVibrate from "@shared/hooks/useVibrate";
 import useBodyTheme from "@shared/hooks/useBodyTheme";
 import { useFixedModal } from "@shared/contexts/FixedModalContext/FixedModal.hook";
+import { CASE_LOGIC_LONG } from "@shared/consts/settings.consts";
 
 // ########## РЕСУРСЫ
 import wowcoin from "@assets/02_images/wincoin.svg";
@@ -70,38 +71,35 @@ const getCasesStats = (): TCasesStats => {
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-const caseLogicParams: CaseLogicParams = {
-   sizes: {
-      wrapper: 500,
-      element: 100,
-   },
-   args: {
-      timeAcc: 0.5,
-      timeMax: 2.0,
-      timeDec: 2.5,
-      wayWrapperCount: 10,
-   }
-};
-
-/* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
-
 const CasePage = ({ name }: ICasePage): JSX.Element => {
 
+   /* Modal */
    const { open, close } = useFixedModal();
+
+   /* Vibrate */
    const vibrate = useVibrate();
 
+   /* Load game data. */
    const [init, setInit] = useState<boolean>(true);
-
    const [data, setData] = useState<GameCase | null>(null);
-   const [stepper, setStepper] = useState<TCasesStats | null>(null);
 
-   const btnResRef = useRef<any>(null);
+   /* Game. */
+   const [start, setStart] = useState<boolean>(false);
    const [resource, setResource] = useState<GameResources>("coin");
 
-   const logic = useMemo(() => data ? new CaseLogic(caseLogicParams, data.items) : null, [data]);
+   const logic = useMemo(() => data ? new CaseLogic(CASE_LOGIC_LONG, data.items) : null, [data]);
    const wheelRef = useRef<WheelHorizontalHandler | null>(null);
 
+   const btnStartRef = useRef<IBtnPlayHandler | null>(null);
+   const timeoutIdRef = useRef<number | null>(null);
+
+   /* Bonus. */
+   const [stepper, setStepper] = useState<TCasesStats | null>(null);
+
+   /* Theme. */
    useBodyTheme(data?.style);
+
+   /* ========== ========== ========== ========== Init */
 
    /* Загрузка данных. */
    useEffect(() => {
@@ -114,7 +112,9 @@ const CasePage = ({ name }: ICasePage): JSX.Element => {
          }
       };
       load();
-      return () => { };
+      return () => {
+         if (timeoutIdRef.current) clearTimeout(timeoutIdRef.current);
+      };
    }, [name]);
 
    /* ========== ========== ========== ========== Методы */
@@ -130,31 +130,48 @@ const CasePage = ({ name }: ICasePage): JSX.Element => {
 
    /* Событие активации. */
    const onStart = () => {
+
+      if (start || timeoutIdRef.current) return;
+      setStart(true);
+
       const wheel = wheelRef.current;
-      if (!wheel || !logic) return;
+      const btnStart = btnStartRef.current;
+      if (!wheel || !logic || !btnStart) return;
 
       /* Start */
       const winElement = logic.getWinElement();
-      console.log(winElement);
+      console.log(winElement); // test
+
       wheel.play(winElement.id);
+      btnStart.start();
+
       if (resource === "coin") nextStep();
+
+      /* Restart */
+      timeoutIdRef.current = setTimeout(() => {
+         setStart(false);
+         timeoutIdRef.current = null;
+      }, 5050);
    };
 
    /* Сменить ресурсы. */
    const toggleResource = useCallback((id: number | string) => {
-      const btnRes = btnResRef.current;
+
+      if (start) return;
+
+      const btnRes = btnStartRef.current;
       if (resource === id || !btnRes) return;
 
       const newResource = resource === "coin" ? "case" : "coin";
 
-      const res: boolean = btnResRef.current.setMain(newResource === "coin"
+      const res: boolean = btnRes.setMain(newResource === "coin"
          ? <Price value={data!.price} size={28} justify="start" resource="coin" extraClass="btn-play-text" animation />
          : <Price value={1} size={28} justify="start" resource="case" extraClass="btn-play-text" animation />
       );
 
       if (res) setResource(newResource);
 
-   }, [resource, setResource, data]);
+   }, [resource, setResource, data, start]);
 
    /* ========== ========== ========== ========== Модальные окна. */
 
@@ -204,8 +221,16 @@ const CasePage = ({ name }: ICasePage): JSX.Element => {
 
                <div className="page-case">
 
-                  <div className="case-bonus" onClick={modalInfoBonus}>
+                  <div className="case-bonus">
                      <Stepper delay={init ? 400 : undefined} total={stepper.divider} current={stepper.current} isInit={init} />
+                     <div className="case-bonus-container">
+                        <div className="case-bonus-count _shimmer">
+                           <span className="case-bonus-count-value ani_ping _unselect">+1</span>
+                        </div>
+                        <div className="case-bonus-box" onClick={modalInfoBonus}>
+                           <ImgBasic src={casecoin} alt="CASECOIN" extraClass="case-bonus-img" />
+                        </div>
+                     </div>
                   </div>
 
                   <div className="case-top">
@@ -247,7 +272,9 @@ const CasePage = ({ name }: ICasePage): JSX.Element => {
                            <ImgBasic src={wowcoin} alt="WOWCOIN" extraClass="case-resourses-img" />
                         </BtnToggle>
 
-                        <div></div>
+                        <div className="case-resourses-value">
+                           <Price value={1234} size={28} justify="none" resource="coin" extraClass="case-resouses-sum" />
+                        </div>
 
                         <BtnToggle id="case" isActive={resource === "case"} action={toggleResource}>
                            <ImgBasic src={casecoin} alt="CASECOIN" extraClass="case-resourses-img" />
@@ -255,7 +282,7 @@ const CasePage = ({ name }: ICasePage): JSX.Element => {
 
                      </div>
 
-                     <BtnPlay ref={btnResRef} delay={5000} action={onStart} states={{
+                     <BtnPlay ref={btnStartRef} delay={5000} action={onStart} states={{
                         main: <Price value={data.price} size={28} justify="start" resource="coin" extraClass="btn-play-text" animation />,
                         wait: <TextGame type="line" content="ВОЛШЕБСТВО" extraClass="btn-play-text" />
                      }} />

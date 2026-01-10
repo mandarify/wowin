@@ -1,7 +1,7 @@
 /*
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 
-  КОМПОНЕНТ: ProfilePage
+  КОМПОНЕНТ: ProfileFriendsPage
 
 :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::::::
 */
@@ -13,7 +13,7 @@ import type { JSX } from "react";
 // import type IProfilePage from "./ProfilePage.types";
 
 // ########## СТИЛИ
-import "./ProfilePage.styles.css";
+import "./ProfileFriendsPage.styles.css";
 
 // ########## КОМПОНЕНТЫ
 import { TitleMain } from "@shared/ui";
@@ -22,15 +22,15 @@ import { TitleMain } from "@shared/ui";
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-const ProfilePage = (): JSX.Element => {
+const ProfileFriendsPage = (): JSX.Element => {
 
    return (
       <div>
-         <TitleMain title="профиль" icon="chess-queen" />
+         <TitleMain title="друзья" icon="chess-queen" />
       </div>
    );
 };
 
 /* ::::::: :::::::::: :::::::::: :::::::::: :::::::::: :::::::::: ::::::: */
 
-export default ProfilePage;
+export default ProfileFriendsPage;

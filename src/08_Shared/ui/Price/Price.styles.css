@@ -144,33 +144,6 @@
 }
 
 /* =================================
-   Animation
-==================================== */
-
-@keyframes ping {
-   0% {
-      transform: scale(1);
-   }
-
-   10% {
-      transform: scale(1.08);
-   }
-
-   20% {
-      transform: scale(1);
-   }
-
-   100% {
-      transform: scale(1);
-   }
-}
-
-.ani_ping {
-   will-change: transform;
-   animation: ping 4s cubic-bezier(0.33, 1, 0.68, 1) infinite;
-}
-
-/* =================================
    MEDIA
 ==================================== */
 

@@ -13,7 +13,7 @@ import { useState, useEffect, useRef, forwardRef, useImperativeHandle } from "re
 
 // ########## ТИПЫ
 import type IBtnPlay from "./BtnPlay.types";
-import type { BtnPlayLabel } from "./BtnPlay.types";
+import type { BtnPlayLabel, IBtnPlayHandler } from "./BtnPlay.types";
 
 // ########## СТИЛИ
 import "./BtnPlay.styles.css";
@@ -32,7 +32,6 @@ const BtnPlay = forwardRef(({ delay, states, action }: IBtnPlay, ref): JSX.Eleme
    const btnRef = useRef<HTMLDivElement>(null);
    const timeoutIdRef = useRef<number | null>(null);
 
-   const [start, setStart] = useState<boolean>(false);
    const [currentId, setCurrentId] = useState<"main" | "second">("main");
    const [labels, setLabels] = useState<BtnPlayLabel[]>([
       { id: 'wait', element: states.wait, position: "top" },
@@ -61,7 +60,6 @@ const BtnPlay = forwardRef(({ delay, states, action }: IBtnPlay, ref): JSX.Eleme
 
    /* Сменить главную кнопку. */
    const switchMainStatus = useCallback((newMain: React.ReactNode) => {
-      if (start) return false;
       const newCurrentId = currentId === "main" ? "second" : "main";
       setLabels(prev => prev.map(item => {
          if (item.id === "main") item.position = currentId === "main" ? "top" : "center";
@@ -71,35 +69,36 @@ const BtnPlay = forwardRef(({ delay, states, action }: IBtnPlay, ref): JSX.Eleme
       }));
       setCurrentId(newCurrentId);
       return true;
-   }, [setLabels, setCurrentId, currentId, start]);
+   }, [setLabels, setCurrentId, currentId]);
 
    /* Выполнение клика по кнопке. */
    const onStart = useCallback(() => {
 
-      if (start) return;
-      setStart(true);
+      const btn = btnRef.current;
+      if (!btn) return;
 
       vibrate.apply('medium');
-      action();
+      btn.classList.toggle("_start");
       updateStatus();
 
       timeoutIdRef.current = setTimeout(() => {
+         btn.classList.toggle("_start");
          updateStatus(true);
-         setStart(false);
          if (timeoutIdRef.current) clearTimeout(timeoutIdRef.current);
       }, delay);
 
-   }, [vibrate, action, start, setStart, updateStatus, delay]);
+   }, [vibrate, updateStatus, delay]);
 
    /* Imperative Handle */
-   useImperativeHandle(ref, () => ({
+   useImperativeHandle(ref, (): IBtnPlayHandler => ({
       setMain: (newMain: React.ReactNode) => {
          return switchMainStatus(newMain);
       },
-   }), [switchMainStatus]);
+      start: onStart,
+   }), [switchMainStatus, onStart]);
 
    return (
-      <div ref={btnRef} className={`btn-play ${start ? '_start' : ''}`.trim()} onClick={onStart}>
+      <div ref={btnRef} className="btn-play" onClick={action}>
 
          <div className="btn-play-content _unselect">
             <div className="btn-play-content-list">

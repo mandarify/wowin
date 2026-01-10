@@ -27,6 +27,11 @@ export type BtnPlayLabel = {
    position: BtnPlayLabelPosition;
 };
 
+export interface IBtnPlayHandler {
+   setMain: (newMain: React.ReactNode) => boolean;
+   start: () => void;
+};
+
 export default interface IBtnPlay {
    delay: number;
    states: {

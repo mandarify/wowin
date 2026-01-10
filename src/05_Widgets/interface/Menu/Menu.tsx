@@ -24,7 +24,7 @@ import MenuMain from "./views/MenuMain/MenuMain";
 
 const Menu = ({ type }: IMenu): JSX.Element => {
    return (
-      <menu id="menu" className={type === "empty" ? '_empty' : ''}>
+      <menu id="menu" className={type === "empty" ? 'menu-short' : 'menu-full'}>
 
          <div className="menu-backdrop _unuse"></div>
 

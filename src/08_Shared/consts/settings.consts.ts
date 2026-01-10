@@ -10,6 +10,7 @@
 
 // ########## ТИПЫ
 import type { ELanguageCode } from "@entities/Language/Language.types";
+import type { CaseLogicParams } from "@shared/modules/CaseLogic/CaseLogic.types";
 
 // ########## СТИЛИ
 
@@ -34,3 +35,30 @@ export const SLIDER = {
    ANIMATION_MS: 500,
 };
 
+/* Case Logic Params: Long 5s and Short 2.5s. */
+
+export const CASE_LOGIC_LONG: CaseLogicParams = {
+   sizes: {
+      wrapper: 500,
+      element: 100,
+   },
+   args: {
+      timeAcc: 0.5,
+      timeMax: 2.0,
+      timeDec: 2.5,
+      wayWrapperCount: 10,
+   }
+};
+
+export const CASE_LOGIC_SHORT: CaseLogicParams = {
+   sizes: {
+      wrapper: 500,
+      element: 100,
+   },
+   args: {
+      timeAcc: 0.5,
+      timeMax: 1.0,
+      timeDec: 1.0,
+      wayWrapperCount: 10,
+   }
+};

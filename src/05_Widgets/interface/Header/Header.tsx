@@ -26,7 +26,7 @@ import HeaderBack from "./views/HeaderBack/HeaderBack";
 const Header = ({ type }: IHeader): JSX.Element => {
 
    return (
-      <header id="header">
+      <header id="header" className={type === "empty" ? `header-short` : `header-full`}>
 
          <div className="header-backdrop _unuse"></div>
 
