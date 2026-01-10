@@ -1,0 +1,19 @@
+{
+   "ok": true,
+   "token": "token-string",
+   "user": {
+      "tid": "",
+      "status": "create",
+      "name": "",
+      "username": "",
+      "img": ""
+   },
+   "profile": {
+      "language": "ru",
+      "theme": "default",
+      "sound": true,
+      "vibration": true,
+      "animation": true,
+      "notification": true
+   }
+}
